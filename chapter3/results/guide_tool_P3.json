@@ -1,0 +1,70 @@
+{
+  "design": "guide_tool",
+  "request": "I want to cancel my ticket 24 hours before departure. How much will I get back?",
+  "answer": "You will get a 50% refund.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "You will get a 50% refund."
+  ],
+  "error": null,
+  "seconds": 21.1,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 641,
+    "prompt_tokens": 592,
+    "cached_prompt_tokens": 336,
+    "completion_tokens": 49,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 11.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 287,
+        "completion_tokens": 39,
+        "total_tokens": 326,
+        "cached_prompt_tokens": 231
+      }
+    },
+    {
+      "t": 11.6,
+      "event": "tool_called",
+      "agent": "Passenger Help Desk",
+      "tool": "search_passenger_guide",
+      "args": {
+        "question": "I want to cancel my ticket 24 hours before departure. How much will I get back?"
+      }
+    },
+    {
+      "t": 11.6,
+      "event": "tool_result",
+      "agent": "Passenger Help Desk",
+      "output": "Cancellations and refunds\nTickets cancelled more than 48 hours before departure are refunded in full,\nminus a fee of Rs 50. Tickets cancelled between 48 and 4 hours before\ndeparture receive a 50 per cent refund. No refund is given less than\n4 hours before departure.\n\nChildren\nChildren under 5 travel free and do not need a ticket, but they do not get\ntheir own seat. Children aged 5 to 11 pay half t"
+    },
+    {
+      "t": 20.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 305,
+        "completion_tokens": 10,
+        "total_tokens": 315,
+        "cached_prompt_tokens": 105
+      }
+    },
+    {
+      "t": 20.6,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "You will get a 50% refund."
+    }
+  ]
+}

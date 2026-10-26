@@ -1,0 +1,45 @@
+{
+  "design": "guide_full",
+  "request": "I already have my ticket. Can I add a window seat now?",
+  "answer": "No, window seats cannot be added after a ticket has been issued.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "No, window seats cannot be added after a ticket has been issued."
+  ],
+  "error": null,
+  "seconds": 8.5,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 395,
+    "prompt_tokens": 380,
+    "cached_prompt_tokens": 325,
+    "completion_tokens": 15,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 8.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 380,
+        "completion_tokens": 15,
+        "total_tokens": 395,
+        "cached_prompt_tokens": 325
+      }
+    },
+    {
+      "t": 8.0,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "No, window seats cannot be added after a ticket has been issued."
+    }
+  ]
+}

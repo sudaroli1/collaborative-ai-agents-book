@@ -1,0 +1,57 @@
+{
+  "design": "workflow",
+  "request": "Bengaluru to Mangaluru on Friday night. I must have a window seat.",
+  "answer": "I'm afraid there are no trains available from Bengaluru to Mangaluru on a Friday night with a window seat.\nRECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "state": {
+    "request": "Bengaluru to Mangaluru on Friday night. I must have a window seat.",
+    "origin": "Bengaluru",
+    "destination": "Mangaluru",
+    "day": "Friday",
+    "time_of_day": "night",
+    "window": true,
+    "candidates": [
+      "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 0"
+    ],
+    "choice": "NONE",
+    "id": "a75dc16a-cd5d-4319-88d1-8766937166c0"
+  },
+  "task_outputs": [],
+  "error": null,
+  "seconds": 20.5,
+  "tool_calls": [
+    {
+      "time": "12:28:24",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mangaluru",
+        "day": "Friday"
+      },
+      "result": "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 0"
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 14.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 71,
+        "completion_tokens": 45,
+        "total_tokens": 116,
+        "cached_prompt_tokens": 49
+      }
+    },
+    {
+      "t": 20.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 59,
+        "completion_tokens": 25,
+        "total_tokens": 84,
+        "cached_prompt_tokens": 21
+      }
+    }
+  ]
+}

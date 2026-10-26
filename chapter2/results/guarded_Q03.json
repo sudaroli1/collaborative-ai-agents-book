@@ -1,0 +1,89 @@
+{
+  "design": "guarded",
+  "request": "Find me a train from Bengaluru to Hubballi on Saturday.",
+  "answer": "RECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "task_outputs": [
+    "RECOMMENDATION: NONE"
+  ],
+  "error": null,
+  "seconds": 29.1,
+  "tool_calls": [
+    {
+      "time": "09:33:37",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Bengaluru to Hubballi on Saturday."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 657,
+    "prompt_tokens": 615,
+    "cached_prompt_tokens": 357,
+    "completion_tokens": 42,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 17.7,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 35,
+        "total_tokens": 381,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 17.7,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "day": "Saturday",
+        "destination": "Hubballi"
+      }
+    },
+    {
+      "t": 17.7,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "No trains found from Bengaluru to Hubballi on Saturday."
+    },
+    {
+      "t": 28.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 269,
+        "completion_tokens": 7,
+        "total_tokens": 276,
+        "cached_prompt_tokens": 109
+      }
+    },
+    {
+      "t": 28.5,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "RECOMMENDATION: NONE"
+    },
+    {
+      "t": 28.5,
+      "event": "guardrail",
+      "success": true,
+      "error": null,
+      "retry": 0
+    }
+  ]
+}

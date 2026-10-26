@@ -1,0 +1,59 @@
+{
+  "design": "workflow",
+  "request": "I want to travel from Mysuru to Bengaluru on Saturday morning with a window seat.",
+  "answer": "I'm afraid there are no trains available from Mysuru to Bengaluru on a Saturday morning with a window seat.\nRECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "state": {
+    "request": "I want to travel from Mysuru to Bengaluru on Saturday morning with a window seat.",
+    "origin": "Mysuru",
+    "destination": "Bengaluru",
+    "day": "Saturday",
+    "time_of_day": "morning",
+    "window": true,
+    "candidates": [
+      "16018 Chamundi Return Passenger: departs 07:00, arrives 09:50, window seats free: 0",
+      "16024 Palace City Return: departs 14:30, arrives 16:50, window seats free: 1",
+      "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 3"
+    ],
+    "choice": "NONE",
+    "id": "0f60331b-dff2-40e1-8547-8a3f0b7b3637"
+  },
+  "task_outputs": [],
+  "error": null,
+  "seconds": 22.8,
+  "tool_calls": [
+    {
+      "time": "12:25:52",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Saturday"
+      },
+      "result": "16018 Chamundi Return Passenger: departs 07:00, arrives 09:50, window seats free: 0\n16024 Palace City Return: departs 14:30, arrives 16:50, window seats free: 1\n16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 3"
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 15.9,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 73,
+        "completion_tokens": 45,
+        "total_tokens": 118,
+        "cached_prompt_tokens": 49
+      }
+    },
+    {
+      "t": 22.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 59,
+        "completion_tokens": 25,
+        "total_tokens": 84,
+        "cached_prompt_tokens": 5
+      }
+    }
+  ]
+}

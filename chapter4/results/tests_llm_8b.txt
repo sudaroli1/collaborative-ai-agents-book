@@ -1,0 +1,563 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.15, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter4
+configfile: pytest.ini
+plugins: anyio-4.15.1, platformdirs-4.13.0
+collecting ... collected 12 items / 5 deselected / 7 selected
+
+tests/test_eval.py::test_trip[T1] ┌───────────────────────────── 🌊 Flow Execution ─────────────────────────────┐
+│                                                                             │
+│  Starting Flow Execution                                                    │
+│  Name: TripWorkflow                                                         │
+│  ID: fab905e8-12ad-4041-89f2-09c802664ea9                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── ✨ Update Available ✨ ───────────────────────────┐
+│                                                                             │
+│  A new version of CrewAI is available!                                      │
+│                                                                             │
+│  Current version: 1.15.27                                                   │
+│  Latest version:  1.15.30                                                   │
+│                                                                             │
+│  To update, run: uv sync --upgrade-package crewai                           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 🌊 Flow Started ──────────────────────────────┐
+│                                                                             │
+│  Flow Started                                                               │
+│  Name: TripWorkflow                                                         │
+│  ID: fab905e8-12ad-4041-89f2-09c802664ea9                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── ✅ Flow Completion ─────────────────────────────┐
+│                                                                             │
+│  Flow Execution Completed                                                   │
+│  Name: TripWorkflow                                                         │
+│  ID: fab905e8-12ad-4041-89f2-09c802664ea9                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+T1 16017 16034
+PASSED
+tests/test_eval.py::test_trip[T2] ┌───────────────────────────── 🌊 Flow Execution ─────────────────────────────┐
+│                                                                             │
+│  Starting Flow Execution                                                    │
+│  Name: TripWorkflow                                                         │
+│  ID: 2ecba4f1-72ae-4de3-9d34-1319d645fa5a                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── ✨ Update Available ✨ ───────────────────────────┐
+│                                                                             │
+│  A new version of CrewAI is available!                                      │
+│                                                                             │
+│  Current version: 1.15.27                                                   │
+│  Latest version:  1.15.30                                                   │
+│                                                                             │
+│  To update, run: uv sync --upgrade-package crewai                           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 🌊 Flow Started ──────────────────────────────┐
+│                                                                             │
+│  Flow Started                                                               │
+│  Name: TripWorkflow                                                         │
+│  ID: 2ecba4f1-72ae-4de3-9d34-1319d645fa5a                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── ✅ Flow Completion ─────────────────────────────┐
+│                                                                             │
+│  Flow Execution Completed                                                   │
+│  Name: TripWorkflow                                                         │
+│  ID: 2ecba4f1-72ae-4de3-9d34-1319d645fa5a                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+T2 16031 16034
+PASSED
+tests/test_eval.py::test_trip[T3] ┌───────────────────────────── 🌊 Flow Execution ─────────────────────────────┐
+│                                                                             │
+│  Starting Flow Execution                                                    │
+│  Name: TripWorkflow                                                         │
+│  ID: db719c13-0c64-4edb-8c76-a92fc9ca3fa7                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── ✨ Update Available ✨ ───────────────────────────┐
+│                                                                             │
+│  A new version of CrewAI is available!                                      │
+│                                                                             │
+│  Current version: 1.15.27                                                   │
+│  Latest version:  1.15.30                                                   │
+│                                                                             │
+│  To update, run: uv sync --upgrade-package crewai                           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 🌊 Flow Started ──────────────────────────────┐
+│                                                                             │
+│  Flow Started                                                               │
+│  Name: TripWorkflow                                                         │
+│  ID: db719c13-0c64-4edb-8c76-a92fc9ca3fa7                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── ✅ Flow Completion ─────────────────────────────┐
+│                                                                             │
+│  Flow Execution Completed                                                   │
+│  Name: TripWorkflow                                                         │
+│  ID: db719c13-0c64-4edb-8c76-a92fc9ca3fa7                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+T3 16001 16034
+PASSED
+tests/test_eval.py::test_trip[T4] ┌───────────────────────────── 🌊 Flow Execution ─────────────────────────────┐
+│                                                                             │
+│  Starting Flow Execution                                                    │
+│  Name: TripWorkflow                                                         │
+│  ID: fe50506d-0d0c-4a59-a5db-438ab78e0649                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── ✨ Update Available ✨ ───────────────────────────┐
+│                                                                             │
+│  A new version of CrewAI is available!                                      │
+│                                                                             │
+│  Current version: 1.15.27                                                   │
+│  Latest version:  1.15.30                                                   │
+│                                                                             │
+│  To update, run: uv sync --upgrade-package crewai                           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 🌊 Flow Started ──────────────────────────────┐
+│                                                                             │
+│  Flow Started                                                               │
+│  Name: TripWorkflow                                                         │
+│  ID: fe50506d-0d0c-4a59-a5db-438ab78e0649                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── ✅ Flow Completion ─────────────────────────────┐
+│                                                                             │
+│  Flow Execution Completed                                                   │
+│  Name: TripWorkflow                                                         │
+│  ID: fe50506d-0d0c-4a59-a5db-438ab78e0649                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+T4 16017 16002
+PASSED
+tests/test_eval.py::test_trip[T5] ┌───────────────────────────── 🌊 Flow Execution ─────────────────────────────┐
+│                                                                             │
+│  Starting Flow Execution                                                    │
+│  Name: TripWorkflow                                                         │
+│  ID: e46de876-c8c1-44ed-94d6-2a5e9e4b4fab                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── ✨ Update Available ✨ ───────────────────────────┐
+│                                                                             │
+│  A new version of CrewAI is available!                                      │
+│                                                                             │
+│  Current version: 1.15.27                                                   │
+│  Latest version:  1.15.30                                                   │
+│                                                                             │
+│  To update, run: uv sync --upgrade-package crewai                           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 🌊 Flow Started ──────────────────────────────┐
+│                                                                             │
+│  Flow Started                                                               │
+│  Name: TripWorkflow                                                         │
+│  ID: e46de876-c8c1-44ed-94d6-2a5e9e4b4fab                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── ✅ Flow Completion ─────────────────────────────┐
+│                                                                             │
+│  Flow Execution Completed                                                   │
+│  Name: TripWorkflow                                                         │
+│  ID: e46de876-c8c1-44ed-94d6-2a5e9e4b4fab                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+T5 16585 NONE
+PASSED
+tests/test_eval.py::test_trip[T6] ┌───────────────────────────── 🌊 Flow Execution ─────────────────────────────┐
+│                                                                             │
+│  Starting Flow Execution                                                    │
+│  Name: TripWorkflow                                                         │
+│  ID: e4d246b8-6849-4e60-93c2-ad3ab0ecde3b                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── ✨ Update Available ✨ ───────────────────────────┐
+│                                                                             │
+│  A new version of CrewAI is available!                                      │
+│                                                                             │
+│  Current version: 1.15.27                                                   │
+│  Latest version:  1.15.30                                                   │
+│                                                                             │
+│  To update, run: uv sync --upgrade-package crewai                           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 🌊 Flow Started ──────────────────────────────┐
+│                                                                             │
+│  Flow Started                                                               │
+│  Name: TripWorkflow                                                         │
+│  ID: e4d246b8-6849-4e60-93c2-ad3ab0ecde3b                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: understand                                                         │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: plan                                                               │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── 🔄 Flow Method Running ───────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Running                                                            │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────── ✅ Flow Method Completed ──────────────────────────┐
+│                                                                             │
+│  Method: reply                                                              │
+│  Status: Completed                                                          │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── ✅ Flow Completion ─────────────────────────────┐
+│                                                                             │
+│  Flow Execution Completed                                                   │
+│  Name: TripWorkflow                                                         │
+│  ID: e4d246b8-6849-4e60-93c2-ad3ab0ecde3b                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+T6 NONE 16002
+PASSED
+tests/test_eval.py::test_release_bar 6 of 6 trips correct with llama3.1:8b
+PASSED
+
+============================== warnings summary ===============================
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+  C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+  C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+  C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========== 7 passed, 5 deselected, 12 warnings in 204.49s (0:03:24) ===========

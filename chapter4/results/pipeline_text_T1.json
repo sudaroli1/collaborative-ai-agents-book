@@ -1,0 +1,158 @@
+{
+  "design": "pipeline_text",
+  "request": "I want to go from Bengaluru to Mysuru on Saturday morning and come back to Bengaluru on Sunday evening. Window seats both ways, please.",
+  "answer": "Here is the itinerary for the traveller:\n\n**Bengaluru to Mysuru on Saturday morning**\n\n* 09:15: Depart from Bengaluru on the 16017 Chamundi Fast Passenger\n* 12:05: Arrive in Mysuru\n\n**Mysuru to Bengaluru on Sunday evening**\n\n* 19:30: Depart from Mysuru on the 16034 Sandalwood Return Express\n* 22:05: Arrive in Bengaluru\n\nOUTBOUND: 16017\nRETURN: 16034",
+  "outbound": "16017",
+  "return": "16034",
+  "state": null,
+  "task_outputs": [
+    "The chosen train for this journey is: 16017 Chamundi Fast Passenger, departs 09:15, arrives 12:05.",
+    "The chosen train for this journey is: 16034 Sandalwood Return Express, departs 19:30, arrives 22:05.",
+    "Here is the itinerary for the traveller:\n\n**Bengaluru to Mysuru on Saturday morning**\n\n* 09:15: Depart from Bengaluru on the 16017 Chamundi Fast Passenger\n* 12:05: Arrive in Mysuru\n\n**Mysuru to Bengaluru on Sunday evening**\n\n* 19:30: Depart from Mysuru on the 16034 Sandalwood Return Express\n* 22:05: Arrive in Bengaluru\n\nOUTBOUND: 16017\nRETURN: 16034"
+  ],
+  "error": null,
+  "seconds": 98.1,
+  "tool_calls": [
+    {
+      "time": "10:33:00",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "time": "10:33:28",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      },
+      "result": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    }
+  ],
+  "llm_calls": 5,
+  "tokens": 1876,
+  "trace": [
+    {
+      "t": 0.3,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 26.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 336,
+        "completion_tokens": 35,
+        "total_tokens": 371,
+        "cached_prompt_tokens": 8
+      }
+    },
+    {
+      "t": 26.3,
+      "event": "tool_called",
+      "agent": "Rail Researcher",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      }
+    },
+    {
+      "t": 26.3,
+      "event": "tool_result",
+      "agent": "Rail Researcher",
+      "output": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "t": 44.1,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 354,
+        "completion_tokens": 30,
+        "total_tokens": 384,
+        "cached_prompt_tokens": 108
+      }
+    },
+    {
+      "t": 44.2,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "The chosen train for this journey is: 16017 Chamundi Fast Passenger, departs 09:15, arrives 12:05."
+    },
+    {
+      "t": 44.2,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 54.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 374,
+        "completion_tokens": 35,
+        "total_tokens": 409,
+        "cached_prompt_tokens": 283
+      }
+    },
+    {
+      "t": 54.3,
+      "event": "tool_called",
+      "agent": "Rail Researcher",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      }
+    },
+    {
+      "t": 54.3,
+      "event": "tool_result",
+      "agent": "Rail Researcher",
+      "output": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    },
+    {
+      "t": 67.8,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 339,
+        "completion_tokens": 31,
+        "total_tokens": 370,
+        "cached_prompt_tokens": 153
+      }
+    },
+    {
+      "t": 67.8,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "The chosen train for this journey is: 16034 Sandalwood Return Express, departs 19:30, arrives 22:05."
+    },
+    {
+      "t": 67.8,
+      "event": "agent_started",
+      "agent": "Itinerary Writer"
+    },
+    {
+      "t": 97.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 230,
+        "completion_tokens": 112,
+        "total_tokens": 342,
+        "cached_prompt_tokens": 7
+      }
+    },
+    {
+      "t": 97.6,
+      "event": "agent_finished",
+      "agent": "Itinerary Writer",
+      "output": "Here is the itinerary for the traveller:\n\n**Bengaluru to Mysuru on Saturday morning**\n\n* 09:15: Depart from Bengaluru on the 16017 Chamundi Fast Passenger\n* 12:05: Arrive in Mysuru\n\n**Mysuru to Bengaluru on Sunday evening**\n\n* 19:30: Depart from Mysuru on the 16034 Sandalwood Return Express\n* 22:05: Arrive in Bengaluru\n\nOUTBOUND: 16017\nRETURN: 16034"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+ {"id": "P1", "text": "Does my 3-year-old daughter need a ticket for the train to Mysuru?", "must": ["free", "5"], "gold": "No; under 5 travel free (no own seat)"},
+ {"id": "P2", "text": "My father is 64. Does he get any discount on Deccan Rail?", "must": ["40"], "gold": "Yes, 40 per cent off the adult fare"},
+ {"id": "P3", "text": "I want to cancel my ticket 24 hours before departure. How much will I get back?", "must": ["50"], "gold": "50 per cent refund"},
+ {"id": "P4", "text": "Can I bring my cat on the overnight train to Mangaluru?", "must": ["not"], "gold": "No; pets not allowed on overnight trains"},
+ {"id": "P5", "text": "I have three bags. What will it cost me in luggage fees?", "must": ["150"], "gold": "Rs 150 for the third bag"},
+ {"id": "P6", "text": "I already have my ticket. Can I add a window seat now?", "must": ["cannot", "not"], "gold": "No; must be reserved at booking"}
+]

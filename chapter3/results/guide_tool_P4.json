@@ -1,0 +1,70 @@
+{
+  "design": "guide_tool",
+  "request": "Can I bring my cat on the overnight train to Mangaluru?",
+  "answer": "You cannot bring your cat on the overnight train to Mangaluru.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "You cannot bring your cat on the overnight train to Mangaluru."
+  ],
+  "error": null,
+  "seconds": 19.3,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 590,
+    "prompt_tokens": 541,
+    "cached_prompt_tokens": 336,
+    "completion_tokens": 49,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 10.7,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 282,
+        "completion_tokens": 34,
+        "total_tokens": 316,
+        "cached_prompt_tokens": 231
+      }
+    },
+    {
+      "t": 10.7,
+      "event": "tool_called",
+      "agent": "Passenger Help Desk",
+      "tool": "search_passenger_guide",
+      "args": {
+        "question": "Can I bring my cat on the overnight train to Mangaluru?"
+      }
+    },
+    {
+      "t": 10.7,
+      "event": "tool_result",
+      "agent": "Passenger Help Desk",
+      "output": "Pets\nSmall pets in a closed carrier may travel free on day trains. Pets are not\nallowed on overnight trains.\n\nChildren\nChildren under 5 travel free and do not need a ticket, but they do not get\ntheir own seat. Children aged 5 to 11 pay half the adult fare."
+    },
+    {
+      "t": 18.8,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 259,
+        "completion_tokens": 15,
+        "total_tokens": 274,
+        "cached_prompt_tokens": 105
+      }
+    },
+    {
+      "t": 18.8,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "You cannot bring your cat on the overnight train to Mangaluru."
+    }
+  ]
+}

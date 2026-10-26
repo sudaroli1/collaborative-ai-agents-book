@@ -1,0 +1,20 @@
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Passenger Help Desk                                                 │
+│                                                                             │
+│  Task: A traveller asks: 'Does my 3-year-old daughter need a ticket for     │
+│  the train to Mysuru?'                                                      │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Passenger Help Desk                                                 │
+│                                                                             │
+│  Final Answer:                                                              │
+│  Children under 5 travel free and do not need a ticket, but they do not     │
+│  get their own seat.                                                        │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+

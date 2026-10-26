@@ -1,0 +1,45 @@
+{
+  "design": "guide_none",
+  "request": "I want to cancel my ticket 24 hours before departure. How much will I get back?",
+  "answer": "According to Deccan Rail rules, if you cancel your ticket 24 hours before the scheduled departure, you will get a refund of 50% of the ticket fare.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "According to Deccan Rail rules, if you cancel your ticket 24 hours before the scheduled departure, you will get a refund of 50% of the ticket fare."
+  ],
+  "error": null,
+  "seconds": 12.6,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 159,
+    "prompt_tokens": 123,
+    "cached_prompt_tokens": 62,
+    "completion_tokens": 36,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 12.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 123,
+        "completion_tokens": 36,
+        "total_tokens": 159,
+        "cached_prompt_tokens": 62
+      }
+    },
+    {
+      "t": 12.1,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "According to Deccan Rail rules, if you cancel your ticket 24 hours before the scheduled departure, you will get a refund of 50% of the ticket fare."
+    }
+  ]
+}

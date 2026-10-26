@@ -1,0 +1,45 @@
+{
+  "design": "guide_none",
+  "request": "Can I bring my cat on the overnight train to Mangaluru?",
+  "answer": "According to Deccan Rail rules, pets are not allowed in the train.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "According to Deccan Rail rules, pets are not allowed in the train."
+  ],
+  "error": null,
+  "seconds": 8.9,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 135,
+    "prompt_tokens": 118,
+    "cached_prompt_tokens": 62,
+    "completion_tokens": 17,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 8.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 118,
+        "completion_tokens": 17,
+        "total_tokens": 135,
+        "cached_prompt_tokens": 62
+      }
+    },
+    {
+      "t": 8.4,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "According to Deccan Rail rules, pets are not allowed in the train."
+    }
+  ]
+}

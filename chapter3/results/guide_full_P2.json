@@ -1,0 +1,45 @@
+{
+  "design": "guide_full",
+  "request": "My father is 64. Does he get any discount on Deccan Rail?",
+  "answer": "Passenger Help Desk here. According to our rules, passengers aged 60 or over receive a 40 per cent discount on the adult fare. Proof of age must be shown when boarding. Since your father is 64, he should be eligible for this discount.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "Passenger Help Desk here. According to our rules, passengers aged 60 or over receive a 40 per cent discount on the adult fare. Proof of age must be shown when boarding. Since your father is 64, he should be eligible for this discount."
+  ],
+  "error": null,
+  "seconds": 14.9,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 437,
+    "prompt_tokens": 383,
+    "cached_prompt_tokens": 324,
+    "completion_tokens": 54,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 14.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 383,
+        "completion_tokens": 54,
+        "total_tokens": 437,
+        "cached_prompt_tokens": 324
+      }
+    },
+    {
+      "t": 14.4,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "Passenger Help Desk here. According to our rules, passengers aged 60 or over receive a 40 per cent discount on the adult fare. Proof of age must be shown when boarding. Since your father is 64, he should be eligible for this discount."
+    }
+  ]
+}

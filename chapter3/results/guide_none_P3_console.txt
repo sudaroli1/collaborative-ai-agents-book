@@ -1,0 +1,20 @@
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Passenger Help Desk                                                 │
+│                                                                             │
+│  Task: A traveller asks: 'I want to cancel my ticket 24 hours before        │
+│  departure. How much will I get back?'                                      │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Passenger Help Desk                                                 │
+│                                                                             │
+│  Final Answer:                                                              │
+│  According to Deccan Rail rules, if you cancel your ticket 24 hours before  │
+│  the scheduled departure, you will get a refund of 50% of the ticket fare.  │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+

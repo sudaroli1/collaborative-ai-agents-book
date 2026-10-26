@@ -1,0 +1,290 @@
+[
+ {
+  "id": "R01",
+  "text": "Bengaluru to Mysuru on Sunday after lunch, back on Sunday evening. By the window",
+  "outbound": "NONE",
+  "return": "16034",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R02",
+  "text": "I want to travel from Bengaluru to Mysuru on Sunday in the morning and return on Sunday afternoon. Window seat please",
+  "outbound": "16001",
+  "return": "NONE",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R03",
+  "text": "I want to travel from Bengaluru to Mysuru on Sunday in the morning and return on Sunday afternoon. I need a window seat",
+  "outbound": "16001",
+  "return": "NONE",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R04",
+  "text": "I want to travel from Bengaluru to Mysuru on Saturday morning and return on Sunday. Any seat",
+  "outbound": "16001",
+  "return": "16002",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R05",
+  "text": "I want to travel from Bangalore to Mysore on Saturday before noon and return on Sunday afternoon. I need a window seat",
+  "outbound": "16017",
+  "return": "NONE",
+  "old_names": true,
+  "window": true
+ },
+ {
+  "id": "R06",
+  "text": "I want to travel from Bengaluru to Mysuru on Saturday after lunch and return on Saturday afternoon. By the window",
+  "outbound": "NONE",
+  "return": "16024",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R07",
+  "text": "Need trains B'lore-Mysore Saturday after lunch, return Saturday in the evening, Any seat",
+  "outbound": "NONE",
+  "return": "16002",
+  "old_names": true,
+  "window": false
+ },
+ {
+  "id": "R08",
+  "text": "I want to travel from Bengaluru to Mysuru on Saturday evening and return on Saturday in the evening. I need a window seat",
+  "outbound": "16031",
+  "return": "16002",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R09",
+  "text": "Book a return trip: Saturday evening B'lore to Mysore, coming back Sunday in the evening.",
+  "outbound": "16031",
+  "return": "16002",
+  "old_names": true,
+  "window": false
+ },
+ {
+  "id": "R10",
+  "text": "I want to travel from Bengaluru to Mysuru on Saturday evening and return on Sunday afternoon. Any seat",
+  "outbound": "16031",
+  "return": "NONE",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R11",
+  "text": "Need trains Bengaluru-Mysuru Saturday after lunch, return Saturday evening, By the window",
+  "outbound": "NONE",
+  "return": "16002",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R12",
+  "text": "Need trains Bangalore-Mysore Sunday in the evening, return Sunday evening, By the window",
+  "outbound": "NONE",
+  "return": "16034",
+  "old_names": true,
+  "window": true
+ },
+ {
+  "id": "R13",
+  "text": "I want to travel from B'lore to Mysore on Saturday afternoon and return on Saturday evening. Any seat",
+  "outbound": "NONE",
+  "return": "16002",
+  "old_names": true,
+  "window": false
+ },
+ {
+  "id": "R14",
+  "text": "Book a return trip: Sunday evening Bangalore to Mysore, coming back Sunday evening.",
+  "outbound": "16033",
+  "return": "16002",
+  "old_names": true,
+  "window": false
+ },
+ {
+  "id": "R15",
+  "text": "Book a return trip: Sunday evening Bengaluru to Mysuru, coming back Sunday evening. By the window",
+  "outbound": "NONE",
+  "return": "16034",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R16",
+  "text": "I want to travel from Bengaluru to Mysuru on Sunday before noon and return on Sunday evening. By the window",
+  "outbound": "16001",
+  "return": "16034",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R17",
+  "text": "I want to travel from Bengaluru to Mysuru on Sunday afternoon and return on Sunday after lunch. I need a window seat",
+  "outbound": "NONE",
+  "return": "NONE",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R18",
+  "text": "Book a return trip: Saturday in the morning Bengaluru to Mysuru, coming back Saturday in the evening. Any seat",
+  "outbound": "16001",
+  "return": "16002",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R19",
+  "text": "I want to travel from Bengaluru to Mysuru on Saturday afternoon and return on Saturday in the evening.",
+  "outbound": "NONE",
+  "return": "16002",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R20",
+  "text": "I want to travel from Bengaluru to Mysuru on Sunday morning and return on Sunday in the evening.",
+  "outbound": "16001",
+  "return": "16002",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R21",
+  "text": "Need trains Bengaluru-Mysuru Saturday evening, return Saturday in the evening, Any seat",
+  "outbound": "16031",
+  "return": "16002",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R22",
+  "text": "Need trains Bengaluru-Mysuru Saturday in the evening, return Saturday in the evening, By the window",
+  "outbound": "16031",
+  "return": "16002",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R23",
+  "text": "Need trains Bengaluru-Mysuru Sunday in the morning, return Sunday in the evening, Window seat please",
+  "outbound": "16001",
+  "return": "16034",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R24",
+  "text": "Need trains Bengaluru-Mysuru Saturday after lunch, return Saturday in the evening, By the window",
+  "outbound": "NONE",
+  "return": "16002",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R25",
+  "text": "I want to travel from Bengaluru to Mysuru on Saturday evening and return on Sunday evening. By the window",
+  "outbound": "16031",
+  "return": "16034",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R26",
+  "text": "Book a return trip: Saturday afternoon Bengaluru to Mysuru, coming back Saturday in the evening. Window seat please",
+  "outbound": "NONE",
+  "return": "16002",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R27",
+  "text": "Bengaluru to Mysuru on Saturday evening, back on Saturday evening. By the window",
+  "outbound": "16031",
+  "return": "16002",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R28",
+  "text": "Book a return trip: Sunday afternoon Bangalore to Mysore, coming back Sunday evening. I need a window seat",
+  "outbound": "NONE",
+  "return": "16034",
+  "old_names": true,
+  "window": true
+ },
+ {
+  "id": "R29",
+  "text": "Book a return trip: Saturday morning Bengaluru to Mysuru, coming back Sunday afternoon. By the window",
+  "outbound": "16017",
+  "return": "NONE",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R30",
+  "text": "Bengaluru to Mysuru on Saturday afternoon, back on Saturday evening.",
+  "outbound": "NONE",
+  "return": "16002",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R31",
+  "text": "Need trains Bengaluru-Mysuru Sunday after lunch, return Sunday afternoon, By the window",
+  "outbound": "NONE",
+  "return": "NONE",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R32",
+  "text": "Need trains Bengaluru-Mysuru Sunday evening, return Sunday in the evening, Window seat please",
+  "outbound": "NONE",
+  "return": "16034",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R33",
+  "text": "Book a return trip: Sunday in the evening B'lore to Mysore, coming back Sunday in the evening. Any seat",
+  "outbound": "16033",
+  "return": "16002",
+  "old_names": true,
+  "window": false
+ },
+ {
+  "id": "R34",
+  "text": "Book a return trip: Saturday morning Bengaluru to Mysuru, coming back Saturday afternoon. Any seat",
+  "outbound": "16001",
+  "return": "16024",
+  "old_names": false,
+  "window": false
+ },
+ {
+  "id": "R35",
+  "text": "Need trains Bengaluru-Mysuru Sunday before noon, return Sunday evening, Window seat please",
+  "outbound": "16001",
+  "return": "16034",
+  "old_names": false,
+  "window": true
+ },
+ {
+  "id": "R36",
+  "text": "I want to travel from Bengaluru to Mysuru on Saturday in the evening and return on Saturday in the evening.",
+  "outbound": "16031",
+  "return": "16002",
+  "old_names": false,
+  "window": false
+ }
+]

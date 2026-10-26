@@ -1,0 +1,45 @@
+{
+  "design": "guide_full",
+  "request": "I want to cancel my ticket 24 hours before departure. How much will I get back?",
+  "answer": "Tickets cancelled between 48 and 4 hours before departure receive a 50 per cent refund.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "Tickets cancelled between 48 and 4 hours before departure receive a 50 per cent refund."
+  ],
+  "error": null,
+  "seconds": 9.5,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 405,
+    "prompt_tokens": 385,
+    "cached_prompt_tokens": 324,
+    "completion_tokens": 20,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 8.9,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 385,
+        "completion_tokens": 20,
+        "total_tokens": 405,
+        "cached_prompt_tokens": 324
+      }
+    },
+    {
+      "t": 9.0,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "Tickets cancelled between 48 and 4 hours before departure receive a 50 per cent refund."
+    }
+  ]
+}

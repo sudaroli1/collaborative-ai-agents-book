@@ -1,0 +1,9 @@
+{
+ "teach": "Please remember for future bookings: I never take trains that leave before 8 am, and I always want a window seat.",
+ "requests": [
+  {"id": "M1", "text": "Book me a train from Bengaluru to Mysuru on Saturday morning.", "ok": ["16017", "16023"], "none_ok": false},
+  {"id": "M2", "text": "I need to go from Bengaluru to Mysuru on Sunday.", "ok": [], "none_ok": true},
+  {"id": "M3", "text": "Find me a train from Mysuru to Bengaluru on Saturday.", "ok": ["16024", "16002"], "none_ok": false},
+  {"id": "M4", "text": "Get me to Mangaluru from Bengaluru on Friday night.", "ok": [], "none_ok": true}
+ ]
+}

@@ -1,0 +1,96 @@
+┌───────────────────────── 🚀 Crew Execution Started ─────────────────────────┐
+│                                                                             │
+│  Crew Execution Started                                                     │
+│  Name: crew                                                                 │
+│  ID: ee5c7bc3-0b12-4b5b-b420-06c438191fe6                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 📋 Task Started ──────────────────────────────┐
+│                                                                             │
+│  Task Started                                                               │
+│  Name: The traveller says: 'Book me a train to Mysuru from Bengaluru for    │
+│  Saturday morning, window seat please.'. Find suitable trains and           │
+│  recommend one. Do not book or pay for anything.                            │
+│  ID: 576851f7-988d-43ee-b032-eeb4d23f9951                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Rail Travel Assistant                                               │
+│                                                                             │
+│  Task: The traveller says: 'Book me a train to Mysuru from Bengaluru for    │
+│  Saturday morning, window seat please.'. Find suitable trains and           │
+│  recommend one. Do not book or pay for anything.                            │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────── 🔧 Tool Execution Started (#1) ───────────────────────┐
+│                                                                             │
+[32mTool search_trains executed with result: 16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0
+16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6
+16023 Palace City Intercity: departs ...[0m
+│  Tool: search_trains                                                        │
+│  Args: {'day': 'Saturday', 'origin': 'Bengaluru', 'destination': 'Mysuru'}  │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────── ✅ Tool Execution Completed (#1) ──────────────────────┐
+│                                                                             │
+│  Tool Completed                                                             │
+│  Tool: search_trains                                                        │
+│  Output: 16001 Kaveri Morning Express: departs 06:30, arrives 09:10,        │
+│  window seats free: 0                                                       │
+│  16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats  │
+│  free: 6                                                                    │
+│  16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats    │
+│  free: 2                                                                    │
+│  16031 Silk Route Express: departs 17:40, arrives 20:15, window seats       │
+│  free: 9                                                                    │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Rail Travel Assistant                                               │
+│                                                                             │
+│  Final Answer:                                                              │
+│  Based on your request, I recommend the 16001 Kaveri Morning Express. It    │
+│  departs from Bengaluru at 06:30 and arrives in Mysuru at 09:10.            │
+│  Unfortunately, there are no window seats available on this train.          │
+│                                                                             │
+│  Shall I go ahead and book it?                                              │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── 📋 Task Completion ─────────────────────────────┐
+│                                                                             │
+│  Task Completed                                                             │
+│  Name: The traveller says: 'Book me a train to Mysuru from Bengaluru for    │
+│  Saturday morning, window seat please.'. Find suitable trains and           │
+│  recommend one. Do not book or pay for anything.                            │
+│  Agent: Rail Travel Assistant                                               │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── Crew Completion ──────────────────────────────┐
+│                                                                             │
+│  Crew Execution Completed                                                   │
+│  Name: crew                                                                 │
+│  ID: ee5c7bc3-0b12-4b5b-b420-06c438191fe6                                   │
+│  Final Output: Based on your request, I recommend the 16001 Kaveri Morning  │
+│  Express. It departs from Bengaluru at 06:30 and arrives in Mysuru at       │
+│  09:10. Unfortunately, there are no window seats available on this train.   │
+│                                                                             │
+│  Shall I go ahead and book it?                                              │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+

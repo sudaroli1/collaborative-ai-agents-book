@@ -1,0 +1,70 @@
+{
+  "design": "guide_tool",
+  "request": "I already have my ticket. Can I add a window seat now?",
+  "answer": "You cannot add a window seat to your existing ticket. Window seats can only be reserved at the time of booking for an extra Rs 40.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "You cannot add a window seat to your existing ticket. Window seats can only be reserved at the time of booking for an extra Rs 40."
+  ],
+  "error": null,
+  "seconds": 22.3,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 607,
+    "prompt_tokens": 546,
+    "cached_prompt_tokens": 338,
+    "completion_tokens": 61,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 10.7,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 282,
+        "completion_tokens": 31,
+        "total_tokens": 313,
+        "cached_prompt_tokens": 232
+      }
+    },
+    {
+      "t": 10.7,
+      "event": "tool_called",
+      "agent": "Passenger Help Desk",
+      "tool": "search_passenger_guide",
+      "args": {
+        "question": "Can I add a window seat to my existing ticket?"
+      }
+    },
+    {
+      "t": 10.7,
+      "event": "tool_result",
+      "agent": "Passenger Help Desk",
+      "output": "Window seats\nA window seat can be reserved for Rs 40 extra at the time of booking.\nWindow seats cannot be added after a ticket has been issued.\n\nChildren\nChildren under 5 travel free and do not need a ticket, but they do not get\ntheir own seat. Children aged 5 to 11 pay half the adult fare."
+    },
+    {
+      "t": 21.8,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 264,
+        "completion_tokens": 30,
+        "total_tokens": 294,
+        "cached_prompt_tokens": 106
+      }
+    },
+    {
+      "t": 21.8,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "You cannot add a window seat to your existing ticket. Window seats can only be reserved at the time of booking for an extra Rs 40."
+    }
+  ]
+}

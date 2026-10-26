@@ -1,0 +1,97 @@
+{
+  "design": "checked_v3",
+  "request": "Get me from Chennai to Mysuru on Saturday.",
+  "answer": "{\"route\":\"FAIL\",\"day\":\"FAIL\",\"time_of_day\":\"NOT ASKED\",\"window_seat\":\"NOT ASKED\",\"evidence\":\"No trains found from Chennai to Mysuru on Saturday.\",\"replacement\":\"NONE\"}\nRECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "state": null,
+  "task_outputs": [
+    "RECOMMENDATION: NONE",
+    "{\"route\":\"FAIL\",\"day\":\"FAIL\",\"time_of_day\":\"NOT ASKED\",\"window_seat\":\"NOT ASKED\",\"evidence\":\"No trains found from Chennai to Mysuru on Saturday.\",\"replacement\":\"NONE\"}"
+  ],
+  "error": null,
+  "seconds": 58.8,
+  "tool_calls": [
+    {
+      "time": "16:02:39",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Chennai",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Chennai to Mysuru on Saturday."
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 0.3,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 13.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 351,
+        "completion_tokens": 33,
+        "total_tokens": 384,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 13.5,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Chennai",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      }
+    },
+    {
+      "t": 13.6,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "No trains found from Chennai to Mysuru on Saturday."
+    },
+    {
+      "t": 21.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 271,
+        "completion_tokens": 7,
+        "total_tokens": 278,
+        "cached_prompt_tokens": 109
+      }
+    },
+    {
+      "t": 21.2,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "RECOMMENDATION: NONE"
+    },
+    {
+      "t": 21.3,
+      "event": "agent_started",
+      "agent": "Booking Checker"
+    },
+    {
+      "t": 58.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 632,
+        "completion_tokens": 65,
+        "total_tokens": 697,
+        "cached_prompt_tokens": 7
+      }
+    },
+    {
+      "t": 58.3,
+      "event": "agent_finished",
+      "agent": "Booking Checker",
+      "output": "route='FAIL' day='FAIL' time_of_day='NOT ASKED' window_seat='NOT ASKED' evidence='No trains found from Chennai to Mysuru on Saturday.' replacement='NONE'"
+    }
+  ]
+}

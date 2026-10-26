@@ -1,0 +1,50 @@
+09:53:56 [A1] workflow: T1
+09:55:24 [A2] single: T1
+09:56:28 [A3] pipeline_text: T1
+09:58:20 [A4] pipeline_structured: T1
+10:01:32 [A5] parallel: T1
+10:03:08 [A6] managed: T1
+10:06:40 [B] A2A server and client
+10:09:43 [C1] unit tests
+10:10:00 All done. Tell Claude the Chapter 4 results are ready.
+10:20:19 [A1] workflow: T1
+10:21:56 [A2] workflow: T2
+10:23:07 [A3] workflow: T3
+10:24:09 [A4] workflow: T4
+10:25:09 [A5] workflow: T5
+10:26:04 [A6] workflow: T6
+10:27:06 [A7] single: T1
+10:28:08 [A8] single: T2
+10:29:05 [A9] single: T3
+10:29:55 [A10] single: T4
+10:30:46 [A11] single: T5
+10:31:33 [A12] single: T6
+10:32:24 [A13] pipeline_text: T1
+10:34:13 [A14] pipeline_text: T2
+10:35:47 [A15] pipeline_text: T3
+10:37:33 [A16] pipeline_text: T4
+10:39:14 [A17] pipeline_text: T5
+10:41:22 [A18] pipeline_text: T6
+10:43:07 [A19] pipeline_structured: T1
+10:46:11 [A20] pipeline_structured: T2
+10:47:46 [A21] pipeline_structured: T3
+10:50:47 [A22] pipeline_structured: T4
+10:53:52 [A23] pipeline_structured: T5
+10:55:39 [A24] pipeline_structured: T6
+10:57:09 [A25] parallel: T1
+10:58:54 [A26] parallel: T2
+11:00:38 [A27] parallel: T3
+11:02:36 [A28] parallel: T4
+11:04:27 [A29] parallel: T5
+11:06:23 [A30] parallel: T6
+11:08:04 [A31] managed: T1
+11:11:18 [A32] managed: T2
+11:13:54 [A33] managed: T3
+11:17:53 [A34] managed: T4
+11:20:27 [A35] managed: T5
+11:23:18 [A36] managed: T6
+11:25:55 [B] A2A server and client
+11:28:22 [C1] unit tests
+11:28:31 [C2] evaluation tests with llama3.1:8b
+11:31:58 [C3] evaluation tests with llama3.2:3b
+11:34:01 All done. Tell Claude the Chapter 4 results are ready.

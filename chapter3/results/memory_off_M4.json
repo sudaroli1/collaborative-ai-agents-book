@@ -1,0 +1,83 @@
+{
+  "design": "memory_off",
+  "request": "Get me to Mangaluru from Bengaluru on Friday night.",
+  "answer": "RECOMMENDATION: 16585",
+  "recommendation": "16585",
+  "state": null,
+  "task_outputs": [
+    "RECOMMENDATION: 16585"
+  ],
+  "error": null,
+  "seconds": 23.1,
+  "tool_calls": [
+    {
+      "time": "13:01:46",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mangaluru",
+        "day": "Friday"
+      },
+      "result": "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 0"
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 599,
+    "prompt_tokens": 554,
+    "cached_prompt_tokens": 326,
+    "completion_tokens": 45,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 14.9,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 309,
+        "completion_tokens": 36,
+        "total_tokens": 345,
+        "cached_prompt_tokens": 228
+      }
+    },
+    {
+      "t": 14.9,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mangaluru",
+        "day": "Friday"
+      }
+    },
+    {
+      "t": 14.9,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 0"
+    },
+    {
+      "t": 22.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 245,
+        "completion_tokens": 9,
+        "total_tokens": 254,
+        "cached_prompt_tokens": 98
+      }
+    },
+    {
+      "t": 22.6,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "RECOMMENDATION: 16585"
+    }
+  ]
+}

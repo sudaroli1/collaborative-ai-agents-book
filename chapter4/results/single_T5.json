@@ -1,0 +1,104 @@
+{
+  "design": "single",
+  "request": "Take me from Bengaluru to Mangaluru on Saturday night, and bring me back from Mangaluru to Bengaluru on Sunday.",
+  "answer": "OUTBOUND: 16585\nRETURN: NONE",
+  "outbound": "16585",
+  "return": "NONE",
+  "state": null,
+  "task_outputs": [
+    "OUTBOUND: 16585\nRETURN: NONE"
+  ],
+  "error": null,
+  "seconds": 36.1,
+  "tool_calls": [
+    {
+      "time": "10:31:18",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mangaluru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      },
+      "result": "No trains found from Mangaluru to Bengaluru on Sunday."
+    },
+    {
+      "time": "10:31:18",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mangaluru",
+        "day": "Saturday"
+      },
+      "result": "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 3"
+    }
+  ],
+  "llm_calls": 2,
+  "tokens": 719,
+  "trace": [
+    {
+      "t": 0.3,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 23.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 322,
+        "completion_tokens": 79,
+        "total_tokens": 401,
+        "cached_prompt_tokens": 226
+      }
+    },
+    {
+      "t": 23.0,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mangaluru",
+        "day": "Saturday"
+      }
+    },
+    {
+      "t": 23.0,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "day": "Sunday",
+        "origin": "Mangaluru",
+        "destination": "Bengaluru"
+      }
+    },
+    {
+      "t": 23.0,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "No trains found from Mangaluru to Bengaluru on Sunday."
+    },
+    {
+      "t": 23.0,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 3"
+    },
+    {
+      "t": 35.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 307,
+        "completion_tokens": 11,
+        "total_tokens": 318,
+        "cached_prompt_tokens": 87
+      }
+    },
+    {
+      "t": 35.6,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "OUTBOUND: 16585\nRETURN: NONE"
+    }
+  ]
+}

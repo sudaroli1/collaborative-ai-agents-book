@@ -1,0 +1,158 @@
+{
+  "design": "pipeline_text",
+  "request": "I'd like to leave Bengaluru for Mysuru on Saturday afternoon and return to Bengaluru on Saturday evening.",
+  "answer": "Here's a short itinerary for the traveller:\n\n**Itinerary for Bengaluru to Mysuru and back**\n\n**Day: Saturday**\n\n* 09:15: Depart from Bengaluru on the 16017 Chamundi Fast Passenger\n* 12:05: Arrive in Mysuru\n* 18:05: Depart from Mysuru on the 16002 Kaveri Evening Express\n* 20:45: Arrive back in Bengaluru\n\nOUTBOUND: 16017\nRETURN: 16002",
+  "outbound": "16017",
+  "return": "16002",
+  "state": null,
+  "task_outputs": [
+    "The chosen train for this journey is: 16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6",
+    "The chosen train for this journey is: 16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 3",
+    "Here's a short itinerary for the traveller:\n\n**Itinerary for Bengaluru to Mysuru and back**\n\n**Day: Saturday**\n\n* 09:15: Depart from Bengaluru on the 16017 Chamundi Fast Passenger\n* 12:05: Arrive in Mysuru\n* 18:05: Depart from Mysuru on the 16002 Kaveri Evening Express\n* 20:45: Arrive back in Bengaluru\n\nOUTBOUND: 16017\nRETURN: 16002"
+  ],
+  "error": null,
+  "seconds": 93.5,
+  "tool_calls": [
+    {
+      "time": "10:41:49",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "time": "10:42:17",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Saturday"
+      },
+      "result": "16018 Chamundi Return Passenger: departs 07:00, arrives 09:50, window seats free: 0\n16024 Palace City Return: departs 14:30, arrives 16:50, window seats free: 1\n16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 3"
+    }
+  ],
+  "llm_calls": 5,
+  "tokens": 1891,
+  "trace": [
+    {
+      "t": 0.4,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 16.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 328,
+        "completion_tokens": 31,
+        "total_tokens": 359,
+        "cached_prompt_tokens": 247
+      }
+    },
+    {
+      "t": 16.2,
+      "event": "tool_called",
+      "agent": "Rail Researcher",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      }
+    },
+    {
+      "t": 16.2,
+      "event": "tool_result",
+      "agent": "Rail Researcher",
+      "output": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "t": 34.1,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 36,
+        "total_tokens": 382,
+        "cached_prompt_tokens": 108
+      }
+    },
+    {
+      "t": 34.1,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "The chosen train for this journey is: 16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6"
+    },
+    {
+      "t": 34.1,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 45.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 372,
+        "completion_tokens": 35,
+        "total_tokens": 407,
+        "cached_prompt_tokens": 275
+      }
+    },
+    {
+      "t": 45.0,
+      "event": "tool_called",
+      "agent": "Rail Researcher",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Saturday"
+      }
+    },
+    {
+      "t": 45.0,
+      "event": "tool_result",
+      "agent": "Rail Researcher",
+      "output": "16018 Chamundi Return Passenger: departs 07:00, arrives 09:50, window seats free: 0\n16024 Palace City Return: departs 14:30, arrives 16:50, window seats free: 1\n16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 3"
+    },
+    {
+      "t": 62.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 362,
+        "completion_tokens": 37,
+        "total_tokens": 399,
+        "cached_prompt_tokens": 145
+      }
+    },
+    {
+      "t": 62.5,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "The chosen train for this journey is: 16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 3"
+    },
+    {
+      "t": 62.5,
+      "event": "agent_started",
+      "agent": "Itinerary Writer"
+    },
+    {
+      "t": 93.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 236,
+        "completion_tokens": 108,
+        "total_tokens": 344,
+        "cached_prompt_tokens": 7
+      }
+    },
+    {
+      "t": 93.0,
+      "event": "agent_finished",
+      "agent": "Itinerary Writer",
+      "output": "Here's a short itinerary for the traveller:\n\n**Itinerary for Bengaluru to Mysuru and back**\n\n**Day: Saturday**\n\n* 09:15: Depart from Bengaluru on the 16017 Chamundi Fast Passenger\n* 12:05: Arrive in Mysuru\n* 18:05: Depart from Mysuru on the 16002 Kaveri Evening Express\n* 20:45: Arrive back in Bengaluru\n\nOUTBOUND: 16017\nRETURN: 16002"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "design": "guide_tool",
+  "request": "Does my 3-year-old daughter need a ticket for the train to Mysuru?",
+  "answer": "According to the Deccan Rail rules, children under 5 years old do not need a ticket, but they do not get their own seat.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "According to the Deccan Rail rules, children under 5 years old do not need a ticket, but they do not get their own seat."
+  ],
+  "error": null,
+  "seconds": 14.9,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 630,
+    "prompt_tokens": 561,
+    "cached_prompt_tokens": 559,
+    "completion_tokens": 69,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 9.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 286,
+        "completion_tokens": 38,
+        "total_tokens": 324,
+        "cached_prompt_tokens": 285
+      }
+    },
+    {
+      "t": 9.4,
+      "event": "tool_called",
+      "agent": "Passenger Help Desk",
+      "tool": "search_passenger_guide",
+      "args": {
+        "question": "Does my 3-year-old daughter need a ticket for the train to Mysuru?"
+      }
+    },
+    {
+      "t": 9.4,
+      "event": "tool_result",
+      "agent": "Passenger Help Desk",
+      "output": "Children\nChildren under 5 travel free and do not need a ticket, but they do not get\ntheir own seat. Children aged 5 to 11 pay half the adult fare.\n\nWindow seats\nA window seat can be reserved for Rs 40 extra at the time of booking.\nWindow seats cannot be added after a ticket has been issued."
+    },
+    {
+      "t": 14.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 275,
+        "completion_tokens": 31,
+        "total_tokens": 306,
+        "cached_prompt_tokens": 274
+      }
+    },
+    {
+      "t": 14.4,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "According to the Deccan Rail rules, children under 5 years old do not need a ticket, but they do not get their own seat."
+    }
+  ]
+}

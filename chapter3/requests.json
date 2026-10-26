@@ -1,0 +1,105 @@
+[
+ {
+  "id": "Q01",
+  "text": "Book me a train to Mysuru from Bengaluru for Saturday morning, window seat please.",
+  "ok": [
+   "16017",
+   "16023"
+  ],
+  "none_ok": false,
+  "alt": []
+ },
+ {
+  "id": "Q02",
+  "text": "I need to get from Bengaluru to Mysuru on Sunday morning and I want a window seat.",
+  "ok": [
+   "16001"
+  ],
+  "none_ok": false,
+  "alt": []
+ },
+ {
+  "id": "Q03",
+  "text": "Find me a train from Bengaluru to Hubballi on Saturday.",
+  "ok": [],
+  "none_ok": true,
+  "alt": []
+ },
+ {
+  "id": "Q04",
+  "text": "I want to travel from Mysuru to Bengaluru on Saturday morning with a window seat.",
+  "ok": [],
+  "none_ok": true,
+  "alt": [
+   "16024"
+  ]
+ },
+ {
+  "id": "Q05",
+  "text": "Window seat from Mysuru to Bengaluru on Saturday evening, please.",
+  "ok": [
+   "16002"
+  ],
+  "none_ok": false,
+  "alt": []
+ },
+ {
+  "id": "Q06",
+  "text": "Bengaluru to Mysuru on Sunday evening, window seat.",
+  "ok": [],
+  "none_ok": true,
+  "alt": [
+   "16001"
+  ]
+ },
+ {
+  "id": "Q07",
+  "text": "Any evening train from Bengaluru to Mysuru on Saturday?",
+  "ok": [
+   "16031"
+  ],
+  "none_ok": false,
+  "alt": []
+ },
+ {
+  "id": "Q08",
+  "text": "Overnight train from Bengaluru to Mangaluru on Saturday with a window seat.",
+  "ok": [
+   "16585"
+  ],
+  "none_ok": false,
+  "alt": []
+ },
+ {
+  "id": "Q09",
+  "text": "Bengaluru to Mangaluru on Friday night. I must have a window seat.",
+  "ok": [],
+  "none_ok": true,
+  "alt": []
+ },
+ {
+  "id": "Q10",
+  "text": "Mysuru to Bengaluru on Sunday, any time, but I need a window seat.",
+  "ok": [
+   "16034"
+  ],
+  "none_ok": false,
+  "alt": []
+ },
+ {
+  "id": "Q11",
+  "text": "What is the earliest train from Bengaluru to Mysuru on Saturday that has a window seat free?",
+  "ok": [
+   "16017"
+  ],
+  "none_ok": false,
+  "alt": []
+ },
+ {
+  "id": "Q12",
+  "text": "Get me from Chennai to Mysuru on Saturday.",
+  "ok": [],
+  "none_ok": true,
+  "alt": []
+ }
+]

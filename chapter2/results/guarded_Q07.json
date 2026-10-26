@@ -1,0 +1,126 @@
+{
+  "design": "guarded",
+  "request": "Any evening train from Bengaluru to Mysuru on Saturday?",
+  "answer": "16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9\nRECOMMENDATION: 16031",
+  "recommendation": "16031",
+  "task_outputs": [
+    "16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9\nRECOMMENDATION: 16031"
+  ],
+  "error": null,
+  "seconds": 46.7,
+  "tool_calls": [
+    {
+      "time": "09:36:16",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "time": "09:36:21",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 1377,
+    "prompt_tokens": 1222,
+    "cached_prompt_tokens": 1004,
+    "completion_tokens": 155,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 3
+  },
+  "trace": [
+    {
+      "t": 0.1,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 15.1,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 35,
+        "total_tokens": 381,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 15.1,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "day": "Saturday",
+        "origin": "Bengaluru",
+        "destination": "Mysuru"
+      }
+    },
+    {
+      "t": 15.1,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "t": 20.8,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 364,
+        "completion_tokens": 30,
+        "total_tokens": 394,
+        "cached_prompt_tokens": 363
+      }
+    },
+    {
+      "t": 20.8,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "day": "Saturday",
+        "destination": "Mysuru",
+        "origin": "Bengaluru"
+      }
+    },
+    {
+      "t": 20.8,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "t": 46.1,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 512,
+        "completion_tokens": 90,
+        "total_tokens": 602,
+        "cached_prompt_tokens": 393
+      }
+    },
+    {
+      "t": 46.2,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9\nRECOMMENDATION: 16031"
+    },
+    {
+      "t": 46.2,
+      "event": "guardrail",
+      "success": true,
+      "error": null,
+      "retry": 0
+    }
+  ]
+}

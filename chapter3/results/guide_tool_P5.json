@@ -1,0 +1,70 @@
+{
+  "design": "guide_tool",
+  "request": "I have three bags. What will it cost me in luggage fees?",
+  "answer": "For three bags, the additional luggage fee would be 2 bags * Rs 150 = Rs 300.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "For three bags, the additional luggage fee would be 2 bags * Rs 150 = Rs 300."
+  ],
+  "error": null,
+  "seconds": 22.0,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 624,
+    "prompt_tokens": 567,
+    "cached_prompt_tokens": 336,
+    "completion_tokens": 57,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 10.7,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 282,
+        "completion_tokens": 34,
+        "total_tokens": 316,
+        "cached_prompt_tokens": 231
+      }
+    },
+    {
+      "t": 10.7,
+      "event": "tool_called",
+      "agent": "Passenger Help Desk",
+      "tool": "search_passenger_guide",
+      "args": {
+        "question": "I have three bags. What will it cost me in luggage fees?"
+      }
+    },
+    {
+      "t": 10.7,
+      "event": "tool_result",
+      "agent": "Passenger Help Desk",
+      "output": "Luggage\nEach passenger may carry two bags free of charge, with a combined weight of\nup to 35 kg. Each additional bag costs Rs 150. Bicycles travel only in the\nluggage van and cost Rs 300.\n\nChildren\nChildren under 5 travel free and do not need a ticket, but they do not get\ntheir own seat. Children aged 5 to 11 pay half the adult fare."
+    },
+    {
+      "t": 21.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 285,
+        "completion_tokens": 23,
+        "total_tokens": 308,
+        "cached_prompt_tokens": 105
+      }
+    },
+    {
+      "t": 21.5,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "For three bags, the additional luggage fee would be 2 bags * Rs 150 = Rs 300."
+    }
+  ]
+}

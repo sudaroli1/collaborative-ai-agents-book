@@ -1,0 +1,15 @@
+train_no,train_name,origin,destination,day,departs,arrives,window_seats_free
+16001,Kaveri Morning Express,Bengaluru,Mysuru,Saturday,06:30,09:10,0
+16017,Chamundi Fast Passenger,Bengaluru,Mysuru,Saturday,09:15,12:05,6
+16023,Palace City Intercity,Bengaluru,Mysuru,Saturday,11:00,13:20,2
+16031,Silk Route Express,Bengaluru,Mysuru,Saturday,17:40,20:15,9
+16001,Kaveri Morning Express,Bengaluru,Mysuru,Sunday,06:30,09:10,4
+16023,Palace City Intercity,Bengaluru,Mysuru,Sunday,11:00,13:20,0
+16033,Sandalwood Evening Express,Bengaluru,Mysuru,Sunday,18:20,20:50,0
+16018,Chamundi Return Passenger,Mysuru,Bengaluru,Saturday,07:00,09:50,0
+16024,Palace City Return,Mysuru,Bengaluru,Saturday,14:30,16:50,1
+16002,Kaveri Evening Express,Mysuru,Bengaluru,Saturday,18:05,20:45,3
+16002,Kaveri Evening Express,Mysuru,Bengaluru,Sunday,18:05,20:45,0
+16034,Sandalwood Return Express,Mysuru,Bengaluru,Sunday,19:30,22:05,2
+16585,Coastal Night Express,Bengaluru,Mangaluru,Friday,21:30,06:45,0
+16585,Coastal Night Express,Bengaluru,Mangaluru,Saturday,21:30,06:45,3

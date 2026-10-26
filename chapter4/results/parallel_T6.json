@@ -1,0 +1,83 @@
+{
+  "design": "parallel",
+  "request": "I'd like to leave Bengaluru for Mysuru on Saturday afternoon and return to Bengaluru on Saturday evening.",
+  "answer": "Here is the itinerary based on your colleagues' findings:\n\nBengaluru to Mysuru on Saturday:\n\n* Depart from Bengaluru in the afternoon on Saturday at 14:30\n* Arrive in Mysuru at 16:30\n* Window seats are available on the train\n\nOUTBOUND: 56274\nRETURN: NONE",
+  "outbound": "56274",
+  "return": "NONE",
+  "state": null,
+  "task_outputs": [
+    "{\"origin\": \"Bengaluru\", \"destination\": \"Mysuru\", \"day\": \"Saturday\", \"train\": \"The chosen train for this journey is: 56274\", \"timetable_line\": \"56274: 14:30 Bengaluru (SBC) -> 16:30 Mysuru (MYS) - Window seats available\", \"reason\": \"First train found that fits the day, time of day and window seat request.\"}",
+    "{\"origin\": \"Mysuru\", \"destination\": \"Bengaluru\", \"day\": \"Saturday\", \"train\": \"NONE\", \"timetable_line\": \"NONE\", \"reason\": \"No train found for the return journey\"}",
+    "Here is the itinerary based on your colleagues' findings:\n\nBengaluru to Mysuru on Saturday:\n\n* Depart from Bengaluru in the afternoon on Saturday at 14:30\n* Arrive in Mysuru at 16:30\n* Window seats are available on the train\n\nOUTBOUND: 56274\nRETURN: NONE"
+  ],
+  "error": null,
+  "seconds": 91.0,
+  "tool_calls": [],
+  "llm_calls": 3,
+  "tokens": 1764,
+  "trace": [
+    {
+      "t": 0.4,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 0.4,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 45.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 619,
+        "completion_tokens": 97,
+        "total_tokens": 716,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 45.3,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "{\"origin\": \"Bengaluru\", \"destination\": \"Mysuru\", \"day\": \"Saturday\", \"train\": \"The chosen train for this journey is: 56274\", \"timetable_line\": \"56274: 14:30 Bengaluru (SBC) -> 16:30 Mysuru (MYS) - Window seats available\", \"reason\": \"First train found that fits the day, time of day and window seat request.\"}"
+    },
+    {
+      "t": 72.1,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 619,
+        "completion_tokens": 50,
+        "total_tokens": 669,
+        "cached_prompt_tokens": 275
+      }
+    },
+    {
+      "t": 72.2,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "{\"origin\": \"Mysuru\", \"destination\": \"Bengaluru\", \"day\": \"Saturday\", \"train\": \"NONE\", \"timetable_line\": \"NONE\", \"reason\": \"No train found for the return journey\"}"
+    },
+    {
+      "t": 72.2,
+      "event": "agent_started",
+      "agent": "Itinerary Writer"
+    },
+    {
+      "t": 90.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 308,
+        "completion_tokens": 71,
+        "total_tokens": 379,
+        "cached_prompt_tokens": 189
+      }
+    },
+    {
+      "t": 90.5,
+      "event": "agent_finished",
+      "agent": "Itinerary Writer",
+      "output": "Here is the itinerary based on your colleagues' findings:\n\nBengaluru to Mysuru on Saturday:\n\n* Depart from Bengaluru in the afternoon on Saturday at 14:30\n* Arrive in Mysuru at 16:30\n* Window seats are available on the train\n\nOUTBOUND: 56274\nRETURN: NONE"
+    }
+  ]
+}

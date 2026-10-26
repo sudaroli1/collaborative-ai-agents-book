@@ -1,0 +1,142 @@
+{
+  "design": "checked_v2",
+  "request": "Find me a train from Bengaluru to Hubballi on Saturday.",
+  "answer": "For each criterion, PASS or FAIL with the timetable line as evidence; then CONFIRMED or REPLACED.\n\n1. Route: FAIL. No trains found from Bengaluru to Hubballi on Saturday.\n2. Day: FAIL. No trains found from Bengaluru to Hubballi on Saturday.\n3. Time of day asked for: N/A. No trains found from Bengaluru to Hubballi on Saturday.\n4. Free window seat: N/A. No trains found from Bengaluru to Hubballi on Saturday.\n\nRECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "state": null,
+  "task_outputs": [
+    "RECOMMENDATION: NONE",
+    "For each criterion, PASS or FAIL with the timetable line as evidence; then CONFIRMED or REPLACED.\n\n1. Route: FAIL. No trains found from Bengaluru to Hubballi on Saturday.\n2. Day: FAIL. No trains found from Bengaluru to Hubballi on Saturday.\n3. Time of day asked for: N/A. No trains found from Bengaluru to Hubballi on Saturday.\n4. Free window seat: N/A. No trains found from Bengaluru to Hubballi on Saturday.\n\nRECOMMENDATION: NONE"
+  ],
+  "error": null,
+  "seconds": 60.1,
+  "tool_calls": [
+    {
+      "time": "12:44:00",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Bengaluru to Hubballi on Saturday."
+    },
+    {
+      "time": "12:44:19",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Bengaluru to Hubballi on Saturday."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 1589,
+    "prompt_tokens": 1406,
+    "cached_prompt_tokens": 814,
+    "completion_tokens": 183,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 4
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 13.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 354,
+        "completion_tokens": 31,
+        "total_tokens": 385,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 13.2,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "day": "Saturday",
+        "origin": "Bengaluru",
+        "destination": "Hubballi"
+      }
+    },
+    {
+      "t": 13.2,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "No trains found from Bengaluru to Hubballi on Saturday."
+    },
+    {
+      "t": 21.9,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 277,
+        "completion_tokens": 7,
+        "total_tokens": 284,
+        "cached_prompt_tokens": 109
+      }
+    },
+    {
+      "t": 21.9,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "RECOMMENDATION: NONE"
+    },
+    {
+      "t": 21.9,
+      "event": "agent_started",
+      "agent": "Booking Checker"
+    },
+    {
+      "t": 32.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 426,
+        "completion_tokens": 31,
+        "total_tokens": 457,
+        "cached_prompt_tokens": 298
+      }
+    },
+    {
+      "t": 32.4,
+      "event": "tool_called",
+      "agent": "Booking Checker",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      }
+    },
+    {
+      "t": 32.4,
+      "event": "tool_result",
+      "agent": "Booking Checker",
+      "output": "No trains found from Bengaluru to Hubballi on Saturday."
+    },
+    {
+      "t": 59.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 349,
+        "completion_tokens": 114,
+        "total_tokens": 463,
+        "cached_prompt_tokens": 159
+      }
+    },
+    {
+      "t": 59.6,
+      "event": "agent_finished",
+      "agent": "Booking Checker",
+      "output": "For each criterion, PASS or FAIL with the timetable line as evidence; then CONFIRMED or REPLACED.\n\n1. Route: FAIL. No trains found from Bengaluru to Hubballi on Saturday.\n2. Day: FAIL. No trains found from Bengaluru to Hubballi on Saturday.\n3. Time of day asked for: N/A. No trains found from Bengaluru to Hubballi on Saturday.\n4. Free window seat: N/A. No trains found from Bengaluru to Hubballi on Saturday.\n\nRECOMMENDATION: NONE"
+    }
+  ]
+}

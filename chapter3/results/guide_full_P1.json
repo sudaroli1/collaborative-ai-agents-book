@@ -1,0 +1,45 @@
+{
+  "design": "guide_full",
+  "request": "Does my 3-year-old daughter need a ticket for the train to Mysuru?",
+  "answer": "Children under 5 travel free and do not need a ticket, but they do not get their own seat.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "Children under 5 travel free and do not need a ticket, but they do not get their own seat."
+  ],
+  "error": null,
+  "seconds": 8.5,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 407,
+    "prompt_tokens": 384,
+    "cached_prompt_tokens": 383,
+    "completion_tokens": 23,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.3,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 8.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 384,
+        "completion_tokens": 23,
+        "total_tokens": 407,
+        "cached_prompt_tokens": 383
+      }
+    },
+    {
+      "t": 8.0,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "Children under 5 travel free and do not need a ticket, but they do not get their own seat."
+    }
+  ]
+}

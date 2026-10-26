@@ -1,0 +1,141 @@
+{
+  "design": "checked",
+  "request": "Find me a train from Bengaluru to Hubballi on Saturday.",
+  "answer": "The recommendation was incorrect because no train was found from Bengaluru to Hubballi on Saturday.\n\nRECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "task_outputs": [
+    "RECOMMENDATION: NONE",
+    "The recommendation was incorrect because no train was found from Bengaluru to Hubballi on Saturday.\n\nRECOMMENDATION: NONE"
+  ],
+  "error": null,
+  "seconds": 54.1,
+  "tool_calls": [
+    {
+      "time": "09:44:06",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Bengaluru to Hubballi on Saturday."
+    },
+    {
+      "time": "09:44:29",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Bengaluru to Hubballi on Saturday."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 2894,
+    "prompt_tokens": 2688,
+    "cached_prompt_tokens": 1576,
+    "completion_tokens": 206,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 8
+  },
+  "trace": [
+    {
+      "t": 0.1,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 15.7,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 346,
+        "completion_tokens": 35,
+        "total_tokens": 381,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 15.7,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "day": "Saturday",
+        "destination": "Hubballi"
+      }
+    },
+    {
+      "t": 15.7,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "No trains found from Bengaluru to Hubballi on Saturday."
+    },
+    {
+      "t": 25.1,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 269,
+        "completion_tokens": 7,
+        "total_tokens": 276,
+        "cached_prompt_tokens": 118
+      }
+    },
+    {
+      "t": 25.1,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "RECOMMENDATION: NONE"
+    },
+    {
+      "t": 25.1,
+      "event": "agent_started",
+      "agent": "Booking Checker"
+    },
+    {
+      "t": 38.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 403,
+        "completion_tokens": 35,
+        "total_tokens": 438,
+        "cached_prompt_tokens": 276
+      }
+    },
+    {
+      "t": 38.6,
+      "event": "tool_called",
+      "agent": "Booking Checker",
+      "tool": "search_trains",
+      "args": {
+        "destination": "Hubballi",
+        "day": "Saturday",
+        "origin": "Bengaluru"
+      }
+    },
+    {
+      "t": 38.6,
+      "event": "tool_result",
+      "agent": "Booking Checker",
+      "output": "No trains found from Bengaluru to Hubballi on Saturday."
+    },
+    {
+      "t": 53.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 326,
+        "completion_tokens": 26,
+        "total_tokens": 352,
+        "cached_prompt_tokens": 146
+      }
+    },
+    {
+      "t": 53.6,
+      "event": "agent_finished",
+      "agent": "Booking Checker",
+      "output": "The recommendation was incorrect because no train was found from Bengaluru to Hubballi on Saturday.\n\nRECOMMENDATION: NONE"
+    }
+  ]
+}

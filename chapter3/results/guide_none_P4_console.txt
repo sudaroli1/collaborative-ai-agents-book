@@ -1,0 +1,19 @@
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Passenger Help Desk                                                 │
+│                                                                             │
+│  Task: A traveller asks: 'Can I bring my cat on the overnight train to      │
+│  Mangaluru?'                                                                │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Passenger Help Desk                                                 │
+│                                                                             │
+│  Final Answer:                                                              │
+│  According to Deccan Rail rules, pets are not allowed in the train.         │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+

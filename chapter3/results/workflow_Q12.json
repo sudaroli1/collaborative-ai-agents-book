@@ -1,0 +1,55 @@
+{
+  "design": "workflow",
+  "request": "Get me from Chennai to Mysuru on Saturday.",
+  "answer": "I'm afraid there are no trains available from Chennai to Mysuru on Saturday.\nRECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "state": {
+    "request": "Get me from Chennai to Mysuru on Saturday.",
+    "origin": "Chennai",
+    "destination": "Mysuru",
+    "day": "Saturday",
+    "time_of_day": "",
+    "window": true,
+    "candidates": [],
+    "choice": "NONE",
+    "id": "954bb306-eea1-4bc5-829b-b9a91c831395"
+  },
+  "task_outputs": [],
+  "error": null,
+  "seconds": 18.7,
+  "tool_calls": [
+    {
+      "time": "12:29:52",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Chennai",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Chennai to Mysuru on Saturday."
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 13.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 65,
+        "completion_tokens": 40,
+        "total_tokens": 105,
+        "cached_prompt_tokens": 49
+      }
+    },
+    {
+      "t": 18.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 51,
+        "completion_tokens": 18,
+        "total_tokens": 69,
+        "cached_prompt_tokens": 5
+      }
+    }
+  ]
+}

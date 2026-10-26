@@ -1,0 +1,13 @@
+{
+  "model": "llama3.1:8b",
+  "installed_models": [
+    "llama3.1:8b"
+  ],
+  "python": "3.12.15",
+  "crewai": "1.15.27",
+  "os": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64 Family 23 Model 104 Stepping 1, AuthenticAMD",
+  "started": "2026-10-12 20:28:50",
+  "repeats": 3,
+  "finished": "2026-10-12 20:39:50"
+}

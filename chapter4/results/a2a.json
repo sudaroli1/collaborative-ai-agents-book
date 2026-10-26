@@ -1,0 +1,57 @@
+{
+  "card": {
+    "capabilities": {
+      "streaming": true
+    },
+    "defaultInputModes": [
+      "text/plain"
+    ],
+    "defaultOutputModes": [
+      "text/plain"
+    ],
+    "description": "Plans return train journeys in Karnataka from the live Deccan Rail timetable.",
+    "name": "Deccan Rail Trip Planner",
+    "preferredTransport": "JSONRPC",
+    "protocolVersion": "0.3.0",
+    "skills": [
+      {
+        "description": "Given a request in plain English, finds the outbound and return trains, respecting time of day and window-seat wishes.",
+        "examples": [
+          "Bengaluru to Mysuru on Saturday morning, back on Sunday evening, window seats."
+        ],
+        "id": "plan_return_trip",
+        "name": "Plan a return trip",
+        "tags": [
+          "rail",
+          "travel",
+          "timetable"
+        ]
+      }
+    ],
+    "url": "http://localhost:9999/",
+    "version": "1.0.0"
+  },
+  "direct": {
+    "seconds": 45.3,
+    "request": "Bengaluru to Mysuru on Saturday morning and back on Sunday evening, window seats both ways.",
+    "reply": {
+      "id": 1,
+      "jsonrpc": "2.0",
+      "result": {
+        "kind": "message",
+        "messageId": "c891a208-57b1-4d78-be51-6fed8c2a3ecb",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "Here is a two-sentence itinerary for the traveller:\n\nOn Saturday morning, take the 16017 Chamundi Fast Passenger from Bengaluru at 09:15, enjoying a window seat and arriving in Mysuru by 12:05. On Sunday evening, return to Bengaluru on the 16034 Sandalwood Return Express, departing Mysuru at 19:30 and arriving back by 22:05 with a window seat.\nOUTBOUND: 16017\nRETURN: 16034"
+          }
+        ],
+        "role": "agent"
+      }
+    }
+  },
+  "delegated": {
+    "seconds": 83.0,
+    "reply": "I'll delegate this task to the A2A agent to plan the return trip."
+  }
+}

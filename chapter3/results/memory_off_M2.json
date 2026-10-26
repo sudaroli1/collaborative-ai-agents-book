@@ -1,0 +1,83 @@
+{
+  "design": "memory_off",
+  "request": "I need to go from Bengaluru to Mysuru on Sunday.",
+  "answer": "RECOMMENDATION: 16001",
+  "recommendation": "16001",
+  "state": null,
+  "task_outputs": [
+    "RECOMMENDATION: 16001"
+  ],
+  "error": null,
+  "seconds": 25.0,
+  "tool_calls": [
+    {
+      "time": "13:00:36",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Sunday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 4\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 0\n16033 Sandalwood Evening Express: departs 18:20, arrives 20:50, window seats free: 0"
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 657,
+    "prompt_tokens": 613,
+    "cached_prompt_tokens": 326,
+    "completion_tokens": 44,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 13.7,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 310,
+        "completion_tokens": 35,
+        "total_tokens": 345,
+        "cached_prompt_tokens": 228
+      }
+    },
+    {
+      "t": 13.7,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Sunday"
+      }
+    },
+    {
+      "t": 13.7,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 4\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 0\n16033 Sandalwood Evening Express: departs 18:20, arrives 20:50, window seats free: 0"
+    },
+    {
+      "t": 24.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 303,
+        "completion_tokens": 9,
+        "total_tokens": 312,
+        "cached_prompt_tokens": 98
+      }
+    },
+    {
+      "t": 24.5,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "RECOMMENDATION: 16001"
+    }
+  ]
+}

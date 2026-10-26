@@ -1,0 +1,70 @@
+{
+  "design": "memory_on",
+  "request": "Please remember for future bookings: I never take trains that leave before 8 am, and I always want a window seat.",
+  "answer": "I have saved your preferences for future bookings.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "I have saved your preferences for future bookings."
+  ],
+  "error": null,
+  "seconds": 27.9,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 760,
+    "prompt_tokens": 714,
+    "cached_prompt_tokens": 472,
+    "completion_tokens": 46,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.3,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 18.8,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 456,
+        "completion_tokens": 36,
+        "total_tokens": 492,
+        "cached_prompt_tokens": 363
+      }
+    },
+    {
+      "t": 18.8,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "remember_preference",
+      "args": {
+        "preference": "I never take trains that leave before 8 am, and I always want a window seat."
+      }
+    },
+    {
+      "t": 18.9,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "Saved."
+    },
+    {
+      "t": 27.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 258,
+        "completion_tokens": 10,
+        "total_tokens": 268,
+        "cached_prompt_tokens": 109
+      }
+    },
+    {
+      "t": 27.4,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "I have saved your preferences for future bookings."
+    }
+  ]
+}

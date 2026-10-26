@@ -1,0 +1,104 @@
+{
+  "design": "single",
+  "request": "Bengaluru to Mysuru on Saturday evening, returning Sunday evening. I need a window seat each way.",
+  "answer": "OUTBOUND: 16031\nRETURN: 16002",
+  "outbound": "16031",
+  "return": "16002",
+  "state": null,
+  "task_outputs": [
+    "OUTBOUND: 16031\nRETURN: 16002"
+  ],
+  "error": null,
+  "seconds": 46.0,
+  "tool_calls": [
+    {
+      "time": "10:28:41",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "time": "10:28:41",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      },
+      "result": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    }
+  ],
+  "llm_calls": 2,
+  "tokens": 829,
+  "trace": [
+    {
+      "t": 0.3,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 23.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 319,
+        "completion_tokens": 70,
+        "total_tokens": 389,
+        "cached_prompt_tokens": 226
+      }
+    },
+    {
+      "t": 23.6,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      }
+    },
+    {
+      "t": 23.6,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      }
+    },
+    {
+      "t": 23.6,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    },
+    {
+      "t": 23.6,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    },
+    {
+      "t": 45.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 427,
+        "completion_tokens": 13,
+        "total_tokens": 440,
+        "cached_prompt_tokens": 87
+      }
+    },
+    {
+      "t": 45.5,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "OUTBOUND: 16031\nRETURN: 16002"
+    }
+  ]
+}

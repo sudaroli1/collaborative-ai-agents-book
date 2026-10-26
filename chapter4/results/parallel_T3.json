@@ -1,0 +1,158 @@
+{
+  "design": "parallel",
+  "request": "Plan a day trip: Bengaluru to Mysuru on Sunday morning and back to Bengaluru the same evening. Any seat is fine.",
+  "answer": "Here is the itinerary for the day trip from Bengaluru to Mysuru and back:\n\nSunday Morning:\n- 06:30: Depart from Bengaluru on the 16001 Kaveri Morning Express.\n- 09:10: Arrive in Mysuru.\n\nSunday Evening:\n- 19:30: Depart from Mysuru on the 16034 Sandalwood Return Express.\n- 22:05: Arrive back in Bengaluru.\n\nOUTBOUND: 16001\nRETURN: 16034",
+  "outbound": "16001",
+  "return": "16034",
+  "state": null,
+  "task_outputs": [
+    "{\n  \"origin\": \"Bengaluru\",\n  \"destination\": \"Mysuru\",\n  \"day\": \"Sunday\",\n  \"train\": \"16001 Kaveri Morning Express\",\n  \"timetable_line\": \"departs 06:30, arrives 09:10, window seats free: 4\",\n  \"reason\": \"First train that fits the day, time of day and any window seat request\"\n}",
+    "{\n  \"origin\": \"Mysuru\",\n  \"destination\": \"Bengaluru\",\n  \"day\": \"Sunday\",\n  \"train\": \"16034 Sandalwood Return Express\",\n  \"timetable_line\": \"departs 19:30, arrives 22:05, window seats free: 2\",\n  \"reason\": \"First train that fits the day, the time of day and any window seat request\"\n}",
+    "Here is the itinerary for the day trip from Bengaluru to Mysuru and back:\n\nSunday Morning:\n- 06:30: Depart from Bengaluru on the 16001 Kaveri Morning Express.\n- 09:10: Arrive in Mysuru.\n\nSunday Evening:\n- 19:30: Depart from Mysuru on the 16034 Sandalwood Return Express.\n- 22:05: Arrive back in Bengaluru.\n\nOUTBOUND: 16001\nRETURN: 16034"
+  ],
+  "error": null,
+  "seconds": 108.9,
+  "tool_calls": [
+    {
+      "time": "11:01:10",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      },
+      "result": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    },
+    {
+      "time": "11:01:30",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Sunday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 4\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 0\n16033 Sandalwood Evening Express: departs 18:20, arrives 20:50, window seats free: 0"
+    }
+  ],
+  "llm_calls": 5,
+  "tokens": 3158,
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 0.3,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 24.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 35,
+        "total_tokens": 659,
+        "cached_prompt_tokens": 247
+      }
+    },
+    {
+      "t": 24.2,
+      "event": "tool_called",
+      "agent": "Rail Researcher",
+      "tool": "search_trains",
+      "args": {
+        "day": "Sunday",
+        "origin": "Mysuru",
+        "destination": "Bengaluru"
+      }
+    },
+    {
+      "t": 24.2,
+      "event": "tool_result",
+      "agent": "Rail Researcher",
+      "output": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    },
+    {
+      "t": 43.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 624,
+        "completion_tokens": 35,
+        "total_tokens": 659,
+        "cached_prompt_tokens": 280
+      }
+    },
+    {
+      "t": 43.6,
+      "event": "tool_called",
+      "agent": "Rail Researcher",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Sunday"
+      }
+    },
+    {
+      "t": 43.6,
+      "event": "tool_result",
+      "agent": "Rail Researcher",
+      "output": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 4\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 0\n16033 Sandalwood Evening Express: departs 18:20, arrives 20:50, window seats free: 0"
+    },
+    {
+      "t": 67.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 589,
+        "completion_tokens": 91,
+        "total_tokens": 680,
+        "cached_prompt_tokens": 488
+      }
+    },
+    {
+      "t": 67.6,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "{\n  \"origin\": \"Mysuru\",\n  \"destination\": \"Bengaluru\",\n  \"day\": \"Sunday\",\n  \"train\": \"16034 Sandalwood Return Express\",\n  \"timetable_line\": \"departs 19:30, arrives 22:05, window seats free: 2\",\n  \"reason\": \"First train that fits the day, the time of day and any window seat request\"\n}"
+    },
+    {
+      "t": 86.0,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 617,
+        "completion_tokens": 90,
+        "total_tokens": 707,
+        "cached_prompt_tokens": 616
+      }
+    },
+    {
+      "t": 86.0,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "{\n  \"origin\": \"Bengaluru\",\n  \"destination\": \"Mysuru\",\n  \"day\": \"Sunday\",\n  \"train\": \"16001 Kaveri Morning Express\",\n  \"timetable_line\": \"departs 06:30, arrives 09:10, window seats free: 4\",\n  \"reason\": \"First train that fits the day, time of day and any window seat request\"\n}"
+    },
+    {
+      "t": 86.0,
+      "event": "agent_started",
+      "agent": "Itinerary Writer"
+    },
+    {
+      "t": 108.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 347,
+        "completion_tokens": 106,
+        "total_tokens": 453,
+        "cached_prompt_tokens": 236
+      }
+    },
+    {
+      "t": 108.4,
+      "event": "agent_finished",
+      "agent": "Itinerary Writer",
+      "output": "Here is the itinerary for the day trip from Bengaluru to Mysuru and back:\n\nSunday Morning:\n- 06:30: Depart from Bengaluru on the 16001 Kaveri Morning Express.\n- 09:10: Arrive in Mysuru.\n\nSunday Evening:\n- 19:30: Depart from Mysuru on the 16034 Sandalwood Return Express.\n- 22:05: Arrive back in Bengaluru.\n\nOUTBOUND: 16001\nRETURN: 16034"
+    }
+  ]
+}

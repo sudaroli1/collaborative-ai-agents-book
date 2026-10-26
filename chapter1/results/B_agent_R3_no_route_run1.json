@@ -1,0 +1,27 @@
+{
+  "request": "Find me a train from Bengaluru to Hubballi on Saturday.",
+  "answer": "Unfortunately, no suitable trains exist for the traveller's request.",
+  "error": null,
+  "seconds": 25.6,
+  "tool_calls": [
+    {
+      "time": "20:35:34",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Bengaluru to Hubballi on Saturday."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 647,
+    "prompt_tokens": 603,
+    "cached_prompt_tokens": 366,
+    "completion_tokens": 44,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  }
+}

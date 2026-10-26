@@ -1,0 +1,55 @@
+{
+  "design": "workflow",
+  "request": "Find me a train from Bengaluru to Hubballi on Saturday.",
+  "answer": "I'm afraid there are no trains available from Bengaluru to Hubballi on Saturday.\nRECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "state": {
+    "request": "Find me a train from Bengaluru to Hubballi on Saturday.",
+    "origin": "Bengaluru",
+    "destination": "Hubballi",
+    "day": "Saturday",
+    "time_of_day": "",
+    "window": true,
+    "candidates": [],
+    "choice": "NONE",
+    "id": "511d1e2e-f8fd-47f6-a53f-a3c7469cdb8e"
+  },
+  "task_outputs": [],
+  "error": null,
+  "seconds": 20.9,
+  "tool_calls": [
+    {
+      "time": "12:25:21",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Hubballi",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Bengaluru to Hubballi on Saturday."
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 14.9,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 68,
+        "completion_tokens": 42,
+        "total_tokens": 110,
+        "cached_prompt_tokens": 49
+      }
+    },
+    {
+      "t": 20.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 54,
+        "completion_tokens": 19,
+        "total_tokens": 73,
+        "cached_prompt_tokens": 5
+      }
+    }
+  ]
+}

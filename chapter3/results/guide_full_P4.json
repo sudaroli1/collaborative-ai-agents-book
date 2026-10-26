@@ -1,0 +1,45 @@
+{
+  "design": "guide_full",
+  "request": "Can I bring my cat on the overnight train to Mangaluru?",
+  "answer": "No, pets are not allowed on overnight trains.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "No, pets are not allowed on overnight trains."
+  ],
+  "error": null,
+  "seconds": 8.2,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 391,
+    "prompt_tokens": 380,
+    "cached_prompt_tokens": 324,
+    "completion_tokens": 11,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 7.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 380,
+        "completion_tokens": 11,
+        "total_tokens": 391,
+        "cached_prompt_tokens": 324
+      }
+    },
+    {
+      "t": 7.7,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "No, pets are not allowed on overnight trains."
+    }
+  ]
+}

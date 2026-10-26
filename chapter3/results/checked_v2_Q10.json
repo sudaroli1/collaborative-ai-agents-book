@@ -1,0 +1,105 @@
+{
+  "design": "checked_v2",
+  "request": "Mysuru to Bengaluru on Sunday, any time, but I need a window seat.",
+  "answer": "{\"type\":\"function\",\"name\":\"check_recommendation\", \"parameters\": {\"origin\": \"Mysuru\", \"destination\": \"Bengaluru\", \"day\": \"Sunday\", \"time\": \"any\", \"window_seat\": \"True\"}}",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "The timetable line of the recommended train is: 16034 Sandalwood Return Express\nThis train fits the request because it has available window seats and it runs on Sunday.\nRECOMMENDATION: 16034",
+    "{\"type\":\"function\",\"name\":\"check_recommendation\", \"parameters\": {\"origin\": \"Mysuru\", \"destination\": \"Bengaluru\", \"day\": \"Sunday\", \"time\": \"any\", \"window_seat\": \"True\"}}"
+  ],
+  "error": null,
+  "seconds": 41.8,
+  "tool_calls": [
+    {
+      "time": "12:50:27",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      },
+      "result": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 1277,
+    "prompt_tokens": 1151,
+    "cached_prompt_tokens": 769,
+    "completion_tokens": 126,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 3
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 13.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 359,
+        "completion_tokens": 31,
+        "total_tokens": 390,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 13.6,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "day": "Sunday",
+        "origin": "Mysuru",
+        "destination": "Bengaluru"
+      }
+    },
+    {
+      "t": 13.6,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    },
+    {
+      "t": 25.5,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 324,
+        "completion_tokens": 44,
+        "total_tokens": 368,
+        "cached_prompt_tokens": 223
+      }
+    },
+    {
+      "t": 25.5,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "The timetable line of the recommended train is: 16034 Sandalwood Return Express\nThis train fits the request because it has available window seats and it runs on Sunday.\nRECOMMENDATION: 16034"
+    },
+    {
+      "t": 25.5,
+      "event": "agent_started",
+      "agent": "Booking Checker"
+    },
+    {
+      "t": 41.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 468,
+        "completion_tokens": 51,
+        "total_tokens": 519,
+        "cached_prompt_tokens": 298
+      }
+    },
+    {
+      "t": 41.3,
+      "event": "agent_finished",
+      "agent": "Booking Checker",
+      "output": "{\"type\":\"function\",\"name\":\"check_recommendation\", \"parameters\": {\"origin\": \"Mysuru\", \"destination\": \"Bengaluru\", \"day\": \"Sunday\", \"time\": \"any\", \"window_seat\": \"True\"}}"
+    }
+  ]
+}

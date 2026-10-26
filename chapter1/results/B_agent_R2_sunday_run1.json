@@ -1,0 +1,27 @@
+{
+  "request": "I need to get from Bengaluru to Mysuru on Sunday morning and I want a window seat.",
+  "answer": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 4\nShall I go ahead and book it?",
+  "error": null,
+  "seconds": 33.1,
+  "tool_calls": [
+    {
+      "time": "20:34:50",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Sunday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 4\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 0"
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 728,
+    "prompt_tokens": 659,
+    "cached_prompt_tokens": 357,
+    "completion_tokens": 69,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  }
+}

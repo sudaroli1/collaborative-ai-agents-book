@@ -1,0 +1,90 @@
+{
+  "design": "guarded_v2",
+  "request": "Get me from Chennai to Mysuru on Saturday.",
+  "answer": "RECOMMENDATION: NONE",
+  "recommendation": "NONE",
+  "state": null,
+  "task_outputs": [
+    "RECOMMENDATION: NONE"
+  ],
+  "error": null,
+  "seconds": 21.8,
+  "tool_calls": [
+    {
+      "time": "12:41:39",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Chennai",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "No trains found from Chennai to Mysuru on Saturday."
+    }
+  ],
+  "token_usage": {
+    "total_tokens": 662,
+    "prompt_tokens": 622,
+    "cached_prompt_tokens": 357,
+    "completion_tokens": 40,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Travel Assistant"
+    },
+    {
+      "t": 13.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 351,
+        "completion_tokens": 33,
+        "total_tokens": 384,
+        "cached_prompt_tokens": 248
+      }
+    },
+    {
+      "t": 13.2,
+      "event": "tool_called",
+      "agent": "Rail Travel Assistant",
+      "tool": "search_trains",
+      "args": {
+        "destination": "Mysuru",
+        "day": "Saturday",
+        "origin": "Chennai"
+      }
+    },
+    {
+      "t": 13.2,
+      "event": "tool_result",
+      "agent": "Rail Travel Assistant",
+      "output": "No trains found from Chennai to Mysuru on Saturday."
+    },
+    {
+      "t": 21.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 271,
+        "completion_tokens": 7,
+        "total_tokens": 278,
+        "cached_prompt_tokens": 109
+      }
+    },
+    {
+      "t": 21.3,
+      "event": "agent_finished",
+      "agent": "Rail Travel Assistant",
+      "output": "RECOMMENDATION: NONE"
+    },
+    {
+      "t": 21.3,
+      "event": "guardrail",
+      "success": true,
+      "error": null,
+      "retry": 0
+    }
+  ]
+}

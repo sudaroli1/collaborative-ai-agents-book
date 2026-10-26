@@ -1,0 +1,74 @@
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Rail Researcher                                                     │
+│                                                                             │
+│  Task: The traveller says: 'I'd like to leave Bengaluru for Mysuru on       │
+│  Saturday afternoon and return to Bengaluru on Saturday evening.'. Find     │
+│  the train for the outbound journey only.                                   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Rail Researcher                                                     │
+│                                                                             │
+│  Final Answer:                                                              │
+│  {"origin": "Bengaluru", "destination": "Mysuru", "day": "Saturday",        │
+│  "train": "The chosen train for this journey is: 56278", "timetable_line":  │
+│  "56278: 14:00 Bengaluru (SBC) -> 16:30 Mysuru (MYS) - Window seats         │
+│  available", "reason": "First train found that fits the day, time of day    │
+│  and window seat request."}                                                 │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Rail Researcher                                                     │
+│                                                                             │
+│  Task: The traveller says: 'I'd like to leave Bengaluru for Mysuru on       │
+│  Saturday afternoon and return to Bengaluru on Saturday evening.'. Find     │
+│  the train for the return journey only.                                     │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Rail Researcher                                                     │
+│                                                                             │
+│  Final Answer:                                                              │
+│  {"origin": "Bengaluru", "destination": "Mysuru", "day": "Saturday",        │
+│  "train": "NONE", "timetable_line": "", "reason": "No train found that      │
+│  fits the day, time of day and window seat request."}                       │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Itinerary Writer                                                    │
+│                                                                             │
+│  Task: The traveller says: 'I'd like to leave Bengaluru for Mysuru on       │
+│  Saturday afternoon and return to Bengaluru on Saturday evening.'. Write    │
+│  the itinerary from your colleagues' findings.                              │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Itinerary Writer                                                    │
+│                                                                             │
+│  Final Answer:                                                              │
+│  Here is the itinerary based on your colleagues' findings:                  │
+│                                                                             │
+│  **Bengaluru to Mysuru on Saturday**                                        │
+│                                                                             │
+│  * 14:00: Depart from Bengaluru (SBC) on train 56278                        │
+│  * 16:30: Arrive at Mysuru (MYS)                                            │
+│                                                                             │
+│  OUTBOUND: 56278                                                            │
+│  RETURN: NONE                                                               │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+

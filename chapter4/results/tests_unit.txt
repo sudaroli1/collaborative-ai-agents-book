@@ -1,0 +1,38 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.15, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter4
+configfile: pytest.ini
+plugins: anyio-4.15.1, platformdirs-4.13.0
+collecting ... collected 12 items / 7 deselected / 5 selected
+
+tests/test_rules.py::test_first_morning_train_with_window PASSED         [ 20%]
+tests/test_rules.py::test_morning_without_window_takes_first_train PASSED [ 40%]
+tests/test_rules.py::test_no_afternoon_train PASSED                      [ 60%]
+tests/test_rules.py::test_unknown_route_gives_none PASSED                [ 80%]
+tests/test_rules.py::test_tool_is_case_insensitive PASSED                [100%]
+
+============================== warnings summary ===============================
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425
+  C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:425: DeprecationWarning: function_calling_llm is deprecated and will be removed in a future release.
+    if self.function_calling_llm and not isinstance(
+
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433
+  C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:433: DeprecationWarning: deprecated
+    if self.allow_code_execution:
+
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+..\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444
+  C:\Users\sudar\Desktop\Preparation\Book_Proposal\code\chapter1\.venv312\Lib\site-packages\crewai\agent\core.py:444: DeprecationWarning: deprecated
+    if self.reasoning and self.planning_config is None:
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================ 5 passed, 7 deselected, 12 warnings in 7.63s =================

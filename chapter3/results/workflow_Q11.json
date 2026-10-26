@@ -1,0 +1,60 @@
+{
+  "design": "workflow",
+  "request": "What is the earliest train from Bengaluru to Mysuru on Saturday that has a window seat free?",
+  "answer": "The 16017 Chamundi Fast Passenger is a great option for you on Saturday, departing at 09:15 with 6 window seats available.\nRECOMMENDATION: 16017",
+  "recommendation": "16017",
+  "state": {
+    "request": "What is the earliest train from Bengaluru to Mysuru on Saturday that has a window seat free?",
+    "origin": "Bengaluru",
+    "destination": "Mysuru",
+    "day": "Saturday",
+    "time_of_day": "",
+    "window": true,
+    "candidates": [
+      "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0",
+      "16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6",
+      "16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2",
+      "16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    ],
+    "choice": "16017",
+    "id": "39e91c97-1768-4165-b25c-5e09fb5c655b"
+  },
+  "task_outputs": [],
+  "error": null,
+  "seconds": 23.2,
+  "tool_calls": [
+    {
+      "time": "12:29:22",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mysuru",
+        "day": "Saturday"
+      },
+      "result": "16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 0\n16017 Chamundi Fast Passenger: departs 09:15, arrives 12:05, window seats free: 6\n16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 2\n16031 Silk Route Express: departs 17:40, arrives 20:15, window seats free: 9"
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 14.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 75,
+        "completion_tokens": 42,
+        "total_tokens": 117,
+        "cached_prompt_tokens": 49
+      }
+    },
+    {
+      "t": 22.7,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 31,
+        "total_tokens": 115,
+        "cached_prompt_tokens": 5
+      }
+    }
+  ]
+}

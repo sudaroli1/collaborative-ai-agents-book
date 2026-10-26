@@ -1,0 +1,58 @@
+{
+  "design": "workflow",
+  "request": "Mysuru to Bengaluru on Sunday, any time, but I need a window seat.",
+  "answer": "You can consider taking the 16034 Sandalwood Return Express on Sunday, it has two available window seats.\nRECOMMENDATION: 16034",
+  "recommendation": "16034",
+  "state": {
+    "request": "Mysuru to Bengaluru on Sunday, any time, but I need a window seat.",
+    "origin": "Mysuru",
+    "destination": "Bengaluru",
+    "day": "Sunday",
+    "time_of_day": "",
+    "window": true,
+    "candidates": [
+      "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0",
+      "16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    ],
+    "choice": "16034",
+    "id": "6688d5e6-2078-4c08-8a2e-50540a696b49"
+  },
+  "task_outputs": [],
+  "error": null,
+  "seconds": 21.9,
+  "tool_calls": [
+    {
+      "time": "12:28:52",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Mysuru",
+        "destination": "Bengaluru",
+        "day": "Sunday"
+      },
+      "result": "16002 Kaveri Evening Express: departs 18:05, arrives 20:45, window seats free: 0\n16034 Sandalwood Return Express: departs 19:30, arrives 22:05, window seats free: 2"
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 14.2,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 73,
+        "completion_tokens": 42,
+        "total_tokens": 115,
+        "cached_prompt_tokens": 49
+      }
+    },
+    {
+      "t": 21.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 82,
+        "completion_tokens": 24,
+        "total_tokens": 106,
+        "cached_prompt_tokens": 5
+      }
+    }
+  ]
+}

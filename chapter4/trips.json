@@ -1,0 +1,8 @@
+[
+ {"id": "T1", "text": "I want to go from Bengaluru to Mysuru on Saturday morning and come back to Bengaluru on Sunday evening. Window seats both ways, please.", "outbound": ["16017", "16023"], "return": ["16034"]},
+ {"id": "T2", "text": "Bengaluru to Mysuru on Saturday evening, returning Sunday evening. I need a window seat each way.", "outbound": ["16031"], "return": ["16034"]},
+ {"id": "T3", "text": "Plan a day trip: Bengaluru to Mysuru on Sunday morning and back to Bengaluru the same evening. Any seat is fine.", "outbound": ["16001"], "return": ["16002", "16034"]},
+ {"id": "T4", "text": "Saturday morning from Bengaluru to Mysuru with a window seat, and back to Bengaluru on Saturday evening, also by the window.", "outbound": ["16017", "16023"], "return": ["16002"]},
+ {"id": "T5", "text": "Take me from Bengaluru to Mangaluru on Saturday night, and bring me back from Mangaluru to Bengaluru on Sunday.", "outbound": ["16585"], "return": ["NONE"]},
+ {"id": "T6", "text": "I'd like to leave Bengaluru for Mysuru on Saturday afternoon and return to Bengaluru on Saturday evening.", "outbound": ["NONE"], "return": ["16002"]}
+]

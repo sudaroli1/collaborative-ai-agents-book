@@ -1,0 +1,93 @@
+┌───────────────────────── 🚀 Crew Execution Started ─────────────────────────┐
+│                                                                             │
+│  Crew Execution Started                                                     │
+│  Name: crew                                                                 │
+│  ID: 876f693b-49bd-4f2e-b5c0-4e15671287df                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── 📋 Task Started ──────────────────────────────┐
+│                                                                             │
+│  Task Started                                                               │
+│  Name: The traveller says: 'I need to get from Bengaluru to Mysuru on       │
+│  Sunday morning and I want a window seat.'. Find suitable trains and        │
+│  recommend one. Do not book or pay for anything.                            │
+│  ID: c53a5ca4-af6b-4fa1-ac29-f1900f1cbb22                                   │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────── 🤖 Agent Started ──────────────────────────────┐
+│                                                                             │
+│  Agent: Rail Travel Assistant                                               │
+│                                                                             │
+│  Task: The traveller says: 'I need to get from Bengaluru to Mysuru on       │
+│  Sunday morning and I want a window seat.'. Find suitable trains and        │
+│  recommend one. Do not book or pay for anything.                            │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────── 🔧 Tool Execution Started (#1) ───────────────────────┐[32mTool search_trains executed with result: 16001 Kaveri Morning Express: departs 06:30, arrives 09:10, window seats free: 4
+16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats free: 0...[0m
+
+│                                                                             │
+│  Tool: search_trains                                                        │
+│  Args: {'origin': 'Bengaluru', 'destination': 'Mysuru', 'day': 'Sunday'}    │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────── ✅ Tool Execution Completed (#1) ──────────────────────┐
+│                                                                             │
+│  Tool Completed                                                             │
+│  Tool: search_trains                                                        │
+│  Output: 16001 Kaveri Morning Express: departs 06:30, arrives 09:10,        │
+│  window seats free: 4                                                       │
+│  16023 Palace City Intercity: departs 11:00, arrives 13:20, window seats    │
+│  free: 0                                                                    │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+[35m[Finalize] todos_count=0, todos_with_results=0[0m
+┌─────────────────────────── ✅ Agent Final Answer ───────────────────────────┐
+│                                                                             │
+│  Agent: Rail Travel Assistant                                               │
+│                                                                             │
+│  Final Answer:                                                              │
+│  Based on the search results, I recommend the 16001 Kaveri Morning Express  │
+│  for your journey from Bengaluru to Mysuru on Sunday morning. This train    │
+│  departs at 06:30 and arrives at 09:10, and there are 4 available window    │
+│  seats.                                                                     │
+│                                                                             │
+│  Shall I go ahead and book it?                                              │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── 📋 Task Completion ─────────────────────────────┐
+│                                                                             │
+│  Task Completed                                                             │
+│  Name: The traveller says: 'I need to get from Bengaluru to Mysuru on       │
+│  Sunday morning and I want a window seat.'. Find suitable trains and        │
+│  recommend one. Do not book or pay for anything.                            │
+│  Agent: Rail Travel Assistant                                               │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────── Crew Completion ──────────────────────────────┐
+│                                                                             │
+│  Crew Execution Completed                                                   │
+│  Name: crew                                                                 │
+│  ID: 876f693b-49bd-4f2e-b5c0-4e15671287df                                   │
+│  Final Output: Based on the search results, I recommend the 16001 Kaveri    │
+│  Morning Express for your journey from Bengaluru to Mysuru on Sunday        │
+│  morning. This train departs at 06:30 and arrives at 09:10, and there are   │
+│  4 available window seats.                                                  │
+│                                                                             │
+│  Shall I go ahead and book it?                                              │
+│                                                                             │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+

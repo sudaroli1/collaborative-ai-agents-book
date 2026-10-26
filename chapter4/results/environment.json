@@ -1,0 +1,12 @@
+{
+  "python": "3.12.15",
+  "crewai": "1.15.27",
+  "os": "Windows-11-10.0.26200-SP0",
+  "quick": false,
+  "models": [
+    "llama3.2:3b",
+    "llama3.1:8b"
+  ],
+  "started": "2026-10-26 10:20:19",
+  "finished": "2026-10-26 11:34:01"
+}

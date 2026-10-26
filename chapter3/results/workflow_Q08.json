@@ -1,0 +1,57 @@
+{
+  "design": "workflow",
+  "request": "Overnight train from Bengaluru to Mangaluru on Saturday with a window seat.",
+  "answer": "You can book your window seat on the 16585 Coastal Night Express, which has 3 available seats.\nRECOMMENDATION: 16585",
+  "recommendation": "16585",
+  "state": {
+    "request": "Overnight train from Bengaluru to Mangaluru on Saturday with a window seat.",
+    "origin": "Bengaluru",
+    "destination": "Mangaluru",
+    "day": "Saturday",
+    "time_of_day": "night",
+    "window": true,
+    "candidates": [
+      "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 3"
+    ],
+    "choice": "16585",
+    "id": "00a3d224-206b-4cf4-8fa8-0e9093ea8726"
+  },
+  "task_outputs": [],
+  "error": null,
+  "seconds": 21.8,
+  "tool_calls": [
+    {
+      "time": "12:27:55",
+      "tool": "search_trains",
+      "args": {
+        "origin": "Bengaluru",
+        "destination": "Mangaluru",
+        "day": "Saturday"
+      },
+      "result": "16585 Coastal Night Express: departs 21:30, arrives 06:45, window seats free: 3"
+    }
+  ],
+  "token_usage": null,
+  "trace": [
+    {
+      "t": 14.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 70,
+        "completion_tokens": 45,
+        "total_tokens": 115,
+        "cached_prompt_tokens": 49
+      }
+    },
+    {
+      "t": 21.3,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 78,
+        "completion_tokens": 23,
+        "total_tokens": 101,
+        "cached_prompt_tokens": 5
+      }
+    }
+  ]
+}

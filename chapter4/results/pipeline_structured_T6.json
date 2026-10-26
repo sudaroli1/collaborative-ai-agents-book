@@ -1,0 +1,83 @@
+{
+  "design": "pipeline_structured",
+  "request": "I'd like to leave Bengaluru for Mysuru on Saturday afternoon and return to Bengaluru on Saturday evening.",
+  "answer": "Here is the itinerary based on your colleagues' findings:\n\n**Bengaluru to Mysuru on Saturday**\n\n* 14:00: Depart from Bengaluru (SBC) on train 56278\n* 16:30: Arrive at Mysuru (MYS)\n\nOUTBOUND: 56278\nRETURN: NONE",
+  "outbound": "56278",
+  "return": "NONE",
+  "state": null,
+  "task_outputs": [
+    "{\"origin\": \"Bengaluru\", \"destination\": \"Mysuru\", \"day\": \"Saturday\", \"train\": \"The chosen train for this journey is: 56278\", \"timetable_line\": \"56278: 14:00 Bengaluru (SBC) -> 16:30 Mysuru (MYS) - Window seats available\", \"reason\": \"First train found that fits the day, time of day and window seat request.\"}",
+    "{\"origin\": \"Bengaluru\", \"destination\": \"Mysuru\", \"day\": \"Saturday\", \"train\": \"NONE\", \"timetable_line\": \"\", \"reason\": \"No train found that fits the day, time of day and window seat request.\"}",
+    "Here is the itinerary based on your colleagues' findings:\n\n**Bengaluru to Mysuru on Saturday**\n\n* 14:00: Depart from Bengaluru (SBC) on train 56278\n* 16:30: Arrive at Mysuru (MYS)\n\nOUTBOUND: 56278\nRETURN: NONE"
+  ],
+  "error": null,
+  "seconds": 78.6,
+  "tool_calls": [],
+  "llm_calls": 3,
+  "tokens": 1882,
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 33.8,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 619,
+        "completion_tokens": 97,
+        "total_tokens": 716,
+        "cached_prompt_tokens": 247
+      }
+    },
+    {
+      "t": 33.8,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "{\"origin\": \"Bengaluru\", \"destination\": \"Mysuru\", \"day\": \"Saturday\", \"train\": \"The chosen train for this journey is: 56278\", \"timetable_line\": \"56278: 14:00 Bengaluru (SBC) -> 16:30 Mysuru (MYS) - Window seats available\", \"reason\": \"First train found that fits the day, time of day and window seat request.\"}"
+    },
+    {
+      "t": 33.8,
+      "event": "agent_started",
+      "agent": "Rail Researcher"
+    },
+    {
+      "t": 60.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 724,
+        "completion_tokens": 57,
+        "total_tokens": 781,
+        "cached_prompt_tokens": 275
+      }
+    },
+    {
+      "t": 60.4,
+      "event": "agent_finished",
+      "agent": "Rail Researcher",
+      "output": "{\"origin\": \"Bengaluru\", \"destination\": \"Mysuru\", \"day\": \"Saturday\", \"train\": \"NONE\", \"timetable_line\": \"\", \"reason\": \"No train found that fits the day, time of day and window seat request.\"}"
+    },
+    {
+      "t": 60.5,
+      "event": "agent_started",
+      "agent": "Itinerary Writer"
+    },
+    {
+      "t": 78.1,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 315,
+        "completion_tokens": 70,
+        "total_tokens": 385,
+        "cached_prompt_tokens": 152
+      }
+    },
+    {
+      "t": 78.1,
+      "event": "agent_finished",
+      "agent": "Itinerary Writer",
+      "output": "Here is the itinerary based on your colleagues' findings:\n\n**Bengaluru to Mysuru on Saturday**\n\n* 14:00: Depart from Bengaluru (SBC) on train 56278\n* 16:30: Arrive at Mysuru (MYS)\n\nOUTBOUND: 56278\nRETURN: NONE"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "design": "guide_tool",
+  "request": "My father is 64. Does he get any discount on Deccan Rail?",
+  "answer": "Your father gets a 40% discount on the adult fare as he is 64 years old. Proof of age must be shown when boarding.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "Your father gets a 40% discount on the adult fare as he is 64 years old. Proof of age must be shown when boarding."
+  ],
+  "error": null,
+  "seconds": 22.2,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 621,
+    "prompt_tokens": 556,
+    "cached_prompt_tokens": 336,
+    "completion_tokens": 65,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 2
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 10.9,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 285,
+        "completion_tokens": 35,
+        "total_tokens": 320,
+        "cached_prompt_tokens": 231
+      }
+    },
+    {
+      "t": 10.9,
+      "event": "tool_called",
+      "agent": "Passenger Help Desk",
+      "tool": "search_passenger_guide",
+      "args": {
+        "question": "Does a 64-year-old get a discount on Deccan Rail?"
+      }
+    },
+    {
+      "t": 10.9,
+      "event": "tool_result",
+      "agent": "Passenger Help Desk",
+      "output": "Senior citizens\nPassengers aged 60 or over receive a 40 per cent discount on the adult\nfare. Proof of age must be shown when boarding.\n\nChildren\nChildren under 5 travel free and do not need a ticket, but they do not get\ntheir own seat. Children aged 5 to 11 pay half the adult fare."
+    },
+    {
+      "t": 21.6,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 271,
+        "completion_tokens": 30,
+        "total_tokens": 301,
+        "cached_prompt_tokens": 105
+      }
+    },
+    {
+      "t": 21.7,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "Your father gets a 40% discount on the adult fare as he is 64 years old. Proof of age must be shown when boarding."
+    }
+  ]
+}

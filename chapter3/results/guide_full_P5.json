@@ -1,0 +1,45 @@
+{
+  "design": "guide_full",
+  "request": "I have three bags. What will it cost me in luggage fees?",
+  "answer": "Each passenger may carry two bags free of charge, with a combined weight of up to 35 kg. Each additional bag costs Rs 150.",
+  "recommendation": null,
+  "state": null,
+  "task_outputs": [
+    "Each passenger may carry two bags free of charge, with a combined weight of up to 35 kg. Each additional bag costs Rs 150."
+  ],
+  "error": null,
+  "seconds": 10.9,
+  "tool_calls": [],
+  "token_usage": {
+    "total_tokens": 410,
+    "prompt_tokens": 380,
+    "cached_prompt_tokens": 324,
+    "completion_tokens": 30,
+    "reasoning_tokens": 0,
+    "cache_creation_tokens": 0,
+    "successful_requests": 1
+  },
+  "trace": [
+    {
+      "t": 0.2,
+      "event": "agent_started",
+      "agent": "Passenger Help Desk"
+    },
+    {
+      "t": 10.4,
+      "event": "llm_call",
+      "usage": {
+        "prompt_tokens": 380,
+        "completion_tokens": 30,
+        "total_tokens": 410,
+        "cached_prompt_tokens": 324
+      }
+    },
+    {
+      "t": 10.4,
+      "event": "agent_finished",
+      "agent": "Passenger Help Desk",
+      "output": "Each passenger may carry two bags free of charge, with a combined weight of up to 35 kg. Each additional bag costs Rs 150."
+    }
+  ]
+}
